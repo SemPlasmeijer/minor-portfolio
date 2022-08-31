@@ -1,7 +1,6 @@
 <template>
-  <div class="item" v-tooltip="popover">
-    <RouterLink :to="'/' + link">{{ popover }}</RouterLink>
-    2
+  <div class="itemWrapper" v-tooltip="popover">
+    <RouterLink class="itemInner" :to="'/' + link">{{ popover }}</RouterLink>
   </div>
 </template>
 
@@ -18,12 +17,18 @@ export default {
     },
   },
 };
-
 </script>
 <style lang="scss" scoped>
-.item {
+.itemWrapper {
+  margin: 0.5rem;
   height: 100px;
   width: 100px;
   border: solid 1px black;
+}
+
+.itemInner {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 </style>

@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import SideBar from './components/SideBar.vue'
+import { RouterLink, RouterView } from "vue-router";
+import SideBar from "./components/SideBar.vue";
 </script>
 <template>
   <div class="top-app">
@@ -8,31 +8,33 @@ import SideBar from './components/SideBar.vue'
       <div>
         <SideBar />
       </div>
-      </div>
-      <div class="right">
-        <RouterView />
-      </div>
+    </div>
+    <div class="right">
+      <RouterView />
+    </div>
   </div>
 </template>
 
 <style scoped>
-  .top-app {
-    padding: 5rem;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-  }
+.top-app {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
 
-  .left {
-    height: 100%;
-    flex: 0;
-    padding-right: 1rem;
-    border-right: solid 1px black;
-  }
+.left {
+  background-color: white;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  height: 100%;
+  flex: 0;
+  padding-right: 1rem;
+  border-right: solid 1px lightgray;
+}
 
-  .right {
-    height: 100%;
-    flex: 1;
-    padding-left: 1rem;
-  }
+.right {
+  height: 100%;
+  flex: 1;
+  padding-left: 1rem;
+}
 </style>
