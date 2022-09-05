@@ -23,7 +23,7 @@ export default {
   margin: 0.5rem;
   height: 100px;
   width: 100px;
-  border: solid 1px black;
+  border: solid 1px lightgray;
 }
 
 .itemInner {
