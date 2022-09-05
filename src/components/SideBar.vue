@@ -49,7 +49,6 @@ export default {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  min-width: 250px;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
 }
 </style>

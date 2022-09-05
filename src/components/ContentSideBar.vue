@@ -51,6 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 .sideWrapper {
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
 }
