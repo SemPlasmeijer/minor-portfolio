@@ -21,7 +21,7 @@ import SideBar from "./components/SideBar.vue";
   display: flex;
   flex-direction: row;
   color: black;
-  font-family: 'Roboto Mono', serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .left {
