@@ -36,7 +36,12 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
         <div class="scrollOrCLick">
           If you like what you see <br />
           <span class="secColor">Scroll Down</span>
-          <font-awesome-icon class="arrow" icon="fa-solid fa-arrow-down-long" />
+          <RouterLink class="itemInner" :to="'/description'">
+            <font-awesome-icon
+              class="arrow"
+              icon="fa-solid fa-arrow-down-long"
+            />
+          </RouterLink>
         </div>
         <div class="socials"></div>
       </div>
