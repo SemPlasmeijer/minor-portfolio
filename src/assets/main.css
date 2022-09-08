@@ -1,7 +1,13 @@
 @import "./base.css";
 
 #app {
-    background-color: #f9f9f9;
+    background-color: #171717;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
 }
 
 .tooltip {
@@ -108,4 +114,21 @@
     visibility: visible;
     opacity: 1;
     transition: opacity .15s;
+}
+
+.slide-up {
+    animation: slide-up 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0,0,0);
+}
+
+@keyframes slide-up {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        left: 0;
+        top: -100vh;
+    }
 }

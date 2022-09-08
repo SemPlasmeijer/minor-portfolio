@@ -10,17 +10,24 @@ import SideBar from "./components/SideBar.vue";
       </div>
     </div>
     <div class="right">
-      <RouterView />
+      <router-view v-slot="{ Component }">
+        <transition
+          enter-active-class="animate__animated animate__slideInUp"
+          leave-active-class="animate__animated animate__slideOutUp"
+        >
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .top-app {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  color: black;
+  color: white;
   font-family: "Montserrat", sans-serif;
 }
 
