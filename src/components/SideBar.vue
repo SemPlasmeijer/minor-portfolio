@@ -15,6 +15,10 @@ export default {
     return {
       pageArray: [
         {
+          popover: "Home",
+          link: "",
+        },
+        {
           popover: "Wie ben ik?",
           link: "description",
         },
