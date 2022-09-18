@@ -10,17 +10,29 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: {
+        leave: "animate__animated animate__slideOutUp",
+        enter: "animate__animated animate__slideInDown",
+      }
     },
     {
       path: '/description',
       name: 'description',
-      component: DescriptionView
+      component: DescriptionView,
+      meta: {
+        leave: "animate__animated animate__slideOutUp",
+        enter: "animate__animated animate__slideInDown",
+      }
     },
     {
       path: '/certificates',
       name: 'certificates',
-      component: CertificatesView
+      component: CertificatesView,
+      meta: {
+        leave: "animate__animated animate__slideOutUp",
+        enter: "animate__animated animate__slideInDown",
+      }
     },
     {
       path: '/about',

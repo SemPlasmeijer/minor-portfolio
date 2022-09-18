@@ -10,10 +10,10 @@ import SideBar from "./components/SideBar.vue";
       </div>
     </div>
     <div class="right">
-      <router-view v-slot="{ Component }">
+      <router-view v-slot="{ Component, route }">
         <transition
-          enter-active-class="animate__animated animate__slideInUp"
-          leave-active-class="animate__animated animate__slideOutUp"
+          :enter-active-class="route.meta.enter"
+          :leave-active-class="route.meta.leave"
         >
           <component :is="Component" />
         </transition>
