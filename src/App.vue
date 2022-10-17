@@ -25,7 +25,7 @@ import SideBar from "./components/SideBar.vue";
 <style lang="scss" scoped>
 .top-app {
   height: 100vh;
-  padding: 0rem 0rem 1rem 0rem;
+  padding: 0;
   display: flex;
   flex-direction: row;
   color: var(--vt-c-black);
@@ -38,10 +38,13 @@ import SideBar from "./components/SideBar.vue";
   max-width: 20%;
   z-index: 100;
   height: 100%;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .right {
-  
+  max-height: 100vh;
+  overflow: auto;
   padding-top: 1rem;
   flex: 1;
   min-width: 80%;
