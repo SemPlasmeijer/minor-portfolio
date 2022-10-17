@@ -55,7 +55,7 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 <style lang="scss" scoped>
 .home {
-  color: white;
+  color: var(--vt-c-black);
   display: flex;
   z-index: 100;
   position: fixed;
@@ -63,7 +63,7 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: #171717;
+  background-color: var(--vt-c-white-soft);
 
   .secColor {
     color: #24ed96;
@@ -127,7 +127,7 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
     margin-left: 1rem;
     cursor: pointer;
     &:hover {
-      color: #24ed96;
+      color: var(--vt-c-secondary);
     }
   }
   .profileImage {
@@ -137,7 +137,7 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
       left: 20%;
       width: 80%;
       height: 100%;
-      background-color: #24ed96;
+      background-color: var(--vt-c-secondary);
     }
     width: 50%;
     display: flex;
@@ -145,7 +145,7 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
     align-items: center;
     padding-right: 10%;
     img {
-      border: #171717 solid 20px;
+      border: var(--vt-c-white-soft) solid 20px;
       max-height: 70%;
       max-width: auto;
     }

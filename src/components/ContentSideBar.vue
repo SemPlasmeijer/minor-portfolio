@@ -3,12 +3,11 @@
     <div :key="item.id" v-for="(item, index) in sideList">
       <span
         :class="this.active === item.id ? 'activeItem' : 'item'"
-        v-tooltip="item.title"
         @click="clickSubItem(item.id)"
       >
-        <font-awesome-icon class="circle fa-fw" :icon="item.icon" />
+        {{ item.title }}
+        <span class="devider" v-if="lastEntry !== index"> | </span>
       </span>
-      <div v-if="lastEntry !== index" class="line"></div>
     </div>
   </div>
 </template>
@@ -53,32 +52,33 @@ export default {
 .sideWrapper {
   padding-top: 0.5rem;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
 .item {
-  display: flex;
-  .circle {
-    border: 1px solid lightgray;
-    color: gray;
-    border-radius: 50%;
-    padding: 0.5rem;
-    font-size: 1.3rem;
-    height: var(--fa-fw-width, 1.25em);
-    cursor: pointer;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  .devider {
+    margin-left: 1rem;
   }
 }
 
 .activeItem {
-  display: flex;
-  .circle {
-    border: 1px solid lightblue;
-    color: lightskyblue;
-    border-radius: 50%;
-    padding: 0.5rem;
-    font-size: 1.3rem;
-    height: var(--fa-fw-width, 1.25em);
-    cursor: pointer;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 1rem;
+
+  .devider {
+    margin-left: 1rem;
   }
 }
 .line {

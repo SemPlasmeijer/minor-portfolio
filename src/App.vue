@@ -25,26 +25,25 @@ import SideBar from "./components/SideBar.vue";
 <style lang="scss" scoped>
 .top-app {
   height: 100vh;
+  padding: 0rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: row;
-  color: white;
+  color: var(--vt-c-black);
   font-family: "Montserrat", sans-serif;
 }
 
 .left {
-  background-color: white;
-  padding-top: 5rem;
-  padding-left: 1rem;
+  padding-top: 0rem;
+  min-width: 20%;
+  max-width: 20%;
+
   height: 100%;
-  flex: 0;
-  padding-right: 1rem;
-  border-right: solid 1px lightgray;
 }
 
 .right {
-  padding-top: 5rem;
-  height: 100%;
+  padding-top: 1rem;
   flex: 1;
-  padding-left: 1rem;
+  min-width: 80%;
+  max-width: 80%;
 }
 </style>

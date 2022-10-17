@@ -10,15 +10,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* add some free styles */
-import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { faDatabase} from '@fortawesome/free-solid-svg-icons'
-import { faPython} from '@fortawesome/free-brands-svg-icons'
-import { faVuejs} from '@fortawesome/free-brands-svg-icons'
+import { faArrowDownLong, faEnvelope, faUserSecret, faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin, faTwitter, faPython, faVuejs } from '@fortawesome/free-brands-svg-icons'
 
 /* add each imported icon to the library */
 library.add(faTwitter,
+            faGithub,
+            faLinkedin,
+            faEnvelope,
             faUserSecret, 
             faArrowDownLong, 
             faDatabase, 

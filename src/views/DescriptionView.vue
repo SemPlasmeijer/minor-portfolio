@@ -1,5 +1,7 @@
 <template>
   <div class="viewContainer">
+    <div class="title">Wie ben ik?</div>
+
     <ContentSideBar
       @selectItem="setActive"
       :sideList="itemList"
@@ -21,18 +23,15 @@ export default {
       itemList: [
         {
           id: 1,
-          icon: "fa-solid fa-user-secret",
-          title: "Who Am I?",
+          title: "Wie ben ik?",
         },
         {
           id: 2,
-          icon: "fa-brands fa-twitter",
-          title: "What can I do?",
+          title: "Wat kan ik?",
         },
         {
           id: 3,
-          icon: "fa-brands fa-twitter",
-          title: "What do I want to learn?",
+          title: "Wat wil ik leren?",
         },
       ],
     };
@@ -46,11 +45,22 @@ export default {
 };
 </script>
 <style scoped>
+.title {
+  border-top: 6px double var(--vt-c-black-soft);
+  border-bottom: 6px double var(--vt-c-black-soft);
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
 .viewContainer {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .content {
-  padding: 0.5rem 1.0rem 0.5rem 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
   color: black;
 }
 </style>

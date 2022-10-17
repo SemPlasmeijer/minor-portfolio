@@ -1,13 +1,13 @@
 @import "./base.css";
 
 #app {
-    background-color: #171717;
+    background-color: var(--vt-c-white-soft);
 }
 
 a {
     text-decoration: none;
     outline: none;
-    color: white;
+    color: var(--vt-c-black);
 }
 
 .tooltip {
@@ -16,8 +16,8 @@ a {
 }
 
 .tooltip .tooltip-inner {
-    background: black;
-    color: white;
+    background: var(--vt-c-white-soft);
+    color: var(--vt-c-black);
     border-radius: 16px;
     padding: 5px 10px 4px;
 }
@@ -28,7 +28,7 @@ a {
     border-style: solid;
     position: absolute;
     margin: 5px;
-    border-color: black;
+    border-color: var(--vt-c-white-soft);;
     z-index: 1;
 }
 
