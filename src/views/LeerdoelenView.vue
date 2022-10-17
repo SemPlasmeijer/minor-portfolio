@@ -1,6 +1,6 @@
 <template>
   <div class="viewContainer">
-    <div class="title">Certificates</div>
+    <div class="title">Leerdoelen</div>
 
     <ContentSideBar
       @selectItem="setActive"
@@ -8,7 +8,6 @@
       :active="activeId"
     />
     <div class="content">
-        
     </div>
   </div>
 </template>
@@ -21,15 +20,15 @@ export default {
       itemList: [
         {
           id: 1,
-          title: "Certificaat 1",
+          title: "Wie ben ik?",
         },
         {
           id: 2,
-          title: "Certificaat 2",
+          title: "Wat kan ik?",
         },
         {
           id: 3,
-          title: "Certificaat 3",
+          title: "Wat wil ik leren?",
         },
       ],
     };

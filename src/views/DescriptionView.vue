@@ -58,6 +58,8 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: absolute;
+  width: 100%;
 }
 .content {
   padding: 0.5rem 1rem 0.5rem 1.5rem;

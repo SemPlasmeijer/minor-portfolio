@@ -36,11 +36,12 @@ import SideBar from "./components/SideBar.vue";
   padding-top: 0rem;
   min-width: 20%;
   max-width: 20%;
-
+  z-index: 100;
   height: 100%;
 }
 
 .right {
+  
   padding-top: 1rem;
   flex: 1;
   min-width: 80%;
