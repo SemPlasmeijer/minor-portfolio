@@ -17,6 +17,6 @@
         produceren.
       </p>
     </div>
-    <img class="paragraphPhoto" src="../assets/smartCity.jpg" />
+    <img class="paragraphPhoto" src="/src/assets/smartCity.jpg" />
   </div>
 </template>

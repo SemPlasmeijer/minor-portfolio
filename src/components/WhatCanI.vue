@@ -10,6 +10,6 @@
         machine learning algoritmes kan opstellen in een simpele omgeving.
       </p>
     </div>
-    <img class="paragraphPhoto" src="../assets/wordweb.jpg" />
+    <img class="paragraphPhoto" src="/src/assets/wordweb.jpg" />
   </div>
 </template>

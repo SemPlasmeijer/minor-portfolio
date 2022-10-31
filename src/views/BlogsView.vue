@@ -8,37 +8,54 @@
       :active="activeId"
     />
     <div class="content">
+      <BinnenStadBlogs v-if="activeId === 1"></BinnenStadBlogs>
     </div>
   </div>
 </template>
 <script>
+import BinnenStadBlogs from '../components/BinnenStadBlogs.vue';
 export default {
-  data() {
-    return {
-      activeId: 1,
-
-      itemList: [
-        {
-          id: 1,
-          title: "Wie ben ik?",
-        },
-        {
-          id: 2,
-          title: "Wat kan ik?",
-        },
-        {
-          id: 3,
-          title: "Wat wil ik leren?",
-        },
-      ],
-    };
-  },
-
-  methods: {
-    setActive(id) {
-      this.activeId = id;
+    data() {
+        return {
+            activeId: 1,
+            itemList: [
+                {
+                    id: 1,
+                    title: "Binnenstad",
+                },
+                {
+                    id: 2,
+                    title: "City Marketing",
+                },
+                {
+                    id: 3,
+                    title: "Lean",
+                },
+                {
+                    id: 4,
+                    title: "Communicatie",
+                },
+                {
+                    id: 5,
+                    title: "Lean",
+                },
+                {
+                    id: 6,
+                    title: "Mensen maken de Shift",
+                },
+                {
+                    id: 7,
+                    title: "Scenario Planning",
+                },
+            ],
+        };
     },
-  },
+    methods: {
+        setActive(id) {
+            this.activeId = id;
+        },
+    },
+    components: { BinnenStadBlogs }
 };
 </script>
 <style scoped>

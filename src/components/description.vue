@@ -14,7 +14,7 @@
         deze vakken over problemen zijn heen gekomen.
       </p>
     </div>
-    <img class="paragraphPhoto" src="../assets/MadeGraySmall.jpg" />
+    <img class="paragraphPhoto" src="/src/assets/MadeGraySmall.jpg" />
   </div>
 </template>
 <style lang="scss">
@@ -29,7 +29,7 @@
   color: var(--vt-c-white-soft);
   flex: 1;
   background-color: var(--vt-c-black-soft);
-  padding: 20px; 
+  padding: 20px;
   min-height: 20%;
 }
 
