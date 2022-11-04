@@ -31,6 +31,9 @@ import './assets/main.css'
 
 const app = createApp(App)
 
+/* Global Vars */
+app.provide('githubRef', 'https://github.com/SemPlasmeijer/minor-portfolio/tree/main/onderzoek-bestanden-etc/')
+
 const components = import.meta.globEager('./components/*.vue')
 
 Object.entries(components).forEach(([path, definition]) => {

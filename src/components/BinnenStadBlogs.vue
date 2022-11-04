@@ -3,6 +3,7 @@
 </template>
 <script>
 import BlogContainer from "./BlogContainer.vue";
+import {inject} from "vue";
 export default {
   data() {
     return {
@@ -30,7 +31,7 @@ export default {
           files: [
             {
               name: "BinnenstadBredaTevredeHeid",
-              path: "/onderzoek-bestanden-etc/Binnenstad/BredaTevredeHeid.pdf",
+              path: inject("githubRef") + "Binnenstad/BredaTevredeHeid.pdf",
             },
           ],
         },
@@ -39,7 +40,7 @@ export default {
           dropped: false,
           title: "FoodCourts",
           description:
-            "Foodcourts/foodhalls zijn publieke plekken/pleintjes met verschillende eetstallen waar men eten kan bestellen om op locatie of thuis op te eten. (Wikipedia, 2022) Terwijl in Nederland en Europa deze ruimte voornamelijk is op genomen door grote fastfoodketens zoals Macdonalds, KFC en Subway in Azië en Afrika zijn dit voornamelijk kleine restaurants/foodtrucks.",
+            "Foodcourts/foodhalls zijn publieke plekken/pleintjes met verschillende eetstallen waar men eten kan bestellen om op locatie of thuis op te eten. (Wikipedia, 2022) Terwijl in Nederland en Europa deze ruimte voornamelijk is op genomen door grote fastfoodketens zoals McDonalds, KFC en Subway in Azië en Afrika zijn dit voornamelijk kleine restaurants/foodtrucks.",
           paragraphs: [
             {
               paragraphId: 1,
@@ -57,11 +58,11 @@ export default {
           files: [
             {
               name: "Foodcourts",
-              path: "/onderzoek-bestanden-etc/Binnenstad/FoodCourts.pdf",
+              path: inject("githubRef") + "Binnenstad/FoodCourts.pdf",
             },
             {
               name: "MotivatiePresentatie",
-              path: "/onderzoek-bestanden-etc/Binnenstad/BinnenstadComplete.pptx",
+              path: inject("githubRef") + "Binnenstad/BinnenstadComplete.pptx",
             },
           ],
         },

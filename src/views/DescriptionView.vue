@@ -8,40 +8,41 @@
       :active="activeId"
     />
     <div class="content">
-      <Description v-if="activeId == 1"></Description>
+      <WhoAmI v-if="activeId == 1"></WhoAmI>
       <WhatCanI v-if="activeId == 2"></WhatCanI>
       <WhatDoI v-if="activeId == 3"></WhatDoI>
     </div>
   </div>
 </template>
 <script>
+import WhoAmI from '../components/WhoAmI.vue';
+
 export default {
-  data() {
-    return {
-      activeId: 1,
-
-      itemList: [
-        {
-          id: 1,
-          title: "Wie ben ik?",
-        },
-        {
-          id: 2,
-          title: "Wat kan ik?",
-        },
-        {
-          id: 3,
-          title: "Wat wil ik leren?",
-        },
-      ],
-    };
-  },
-
-  methods: {
-    setActive(id) {
-      this.activeId = id;
+    data() {
+        return {
+            activeId: 1,
+            itemList: [
+                {
+                    id: 1,
+                    title: "Wie ben ik?",
+                },
+                {
+                    id: 2,
+                    title: "Wat kan ik?",
+                },
+                {
+                    id: 3,
+                    title: "Wat wil ik leren?",
+                },
+            ],
+        };
     },
-  },
+    methods: {
+        setActive(id) {
+            this.activeId = id;
+        },
+    },
+    components: { WhoAmI }
 };
 </script>
 <style scoped>

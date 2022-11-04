@@ -9,53 +9,55 @@
     />
     <div class="content">
       <BinnenStadBlogs v-if="activeId === 1"></BinnenStadBlogs>
+      <CityMarketingBlogs v-if="activeId === 2"></CityMarketingBlogs>
     </div>
   </div>
 </template>
 <script>
-import BinnenStadBlogs from '../components/BinnenStadBlogs.vue';
+import BinnenStadBlogs from "../components/BinnenStadBlogs.vue";
+import CityMarketingBlogs from "../components/CityMarketingBlogs.vue";
 export default {
-    data() {
-        return {
-            activeId: 1,
-            itemList: [
-                {
-                    id: 1,
-                    title: "Binnenstad",
-                },
-                {
-                    id: 2,
-                    title: "City Marketing",
-                },
-                {
-                    id: 3,
-                    title: "Lean",
-                },
-                {
-                    id: 4,
-                    title: "Communicatie",
-                },
-                {
-                    id: 5,
-                    title: "Lean",
-                },
-                {
-                    id: 6,
-                    title: "Mensen maken de Shift",
-                },
-                {
-                    id: 7,
-                    title: "Scenario Planning",
-                },
-            ],
-        };
-    },
-    methods: {
-        setActive(id) {
-            this.activeId = id;
+  data() {
+    return {
+      activeId: 1,
+      itemList: [
+        {
+          id: 1,
+          title: "Binnenstad",
         },
+        {
+          id: 2,
+          title: "City Marketing",
+        },
+        {
+          id: 3,
+          title: "Lean",
+        },
+        {
+          id: 4,
+          title: "Communicatie",
+        },
+        {
+          id: 5,
+          title: "Mensen maken de Shift",
+        },
+        {
+          id: 6,
+          title: "Scenario Planning",
+        },
+        {
+          id: 7,
+          title: "Overige",
+        },
+      ],
+    };
+  },
+  methods: {
+    setActive(id) {
+      this.activeId = id;
     },
-    components: { BinnenStadBlogs }
+  },
+  components: { BinnenStadBlogs, CityMarketingBlogs },
 };
 </script>
 <style scoped>

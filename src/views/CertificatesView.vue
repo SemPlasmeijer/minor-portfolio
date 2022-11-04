@@ -1,23 +1,24 @@
 <template>
   <div class="viewContainer">
     <div class="title">Certificates</div>
-
     <ContentSideBar
       @selectItem="setActive"
       :sideList="itemList"
       :active="activeId"
     />
     <div class="content">
-        
+      <embed v-if="activeId === 1"  src="/src/assets/certificateDataAnalysis.pdf"/> 
+      <embed v-if="activeId === 2"  src="/src/assets/certificateIntroduction.pdf"/> 
+      <embed v-if="activeId === 3"  src=""/> 
     </div>
   </div>
 </template>
 <script>
 export default {
+
   data() {
     return {
       activeId: 1,
-
       itemList: [
         {
           id: 1,
@@ -42,7 +43,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
 .title {
   border-top: 6px double var(--vt-c-black-soft);
   border-bottom: 6px double var(--vt-c-black-soft);
@@ -62,5 +63,11 @@ export default {
 .content {
   padding: 0.5rem 1rem 0.5rem 1.5rem;
   color: black;
+  display: flex;
+  justify-content: center;
+  embed {
+    width: 80%;
+    height: 80vh;
+  }
 }
 </style>
