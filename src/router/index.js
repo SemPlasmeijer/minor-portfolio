@@ -11,8 +11,7 @@ import LeerdoelenView from '../views/LeerdoelenView.vue'
 
 
 const router = createRouter({
-  mode: 'history',
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
