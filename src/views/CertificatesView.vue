@@ -6,16 +6,16 @@
       :sideList="itemList"
       :active="activeId"
     />
+    <Certs :certList="itemList"> </Certs>
     <div class="content">
-      <embed v-if="activeId === 1"  src="/assets/certificateDataAnalysis.pdf"/> 
-      <embed v-if="activeId === 2"  src="/assets/certificateIntroduction.pdf"/> 
-      <embed v-if="activeId === 3"  src=""/> 
+      <Cert1 v-if="activeId === 1"></Cert1>
+      <Cert2 v-if="activeId === 2"></Cert2>
+      <Cert3 v-if="activeId === 3"></Cert3>
     </div>
   </div>
 </template>
 <script>
 export default {
-
   data() {
     return {
       activeId: 1,
@@ -62,12 +62,9 @@ export default {
 }
 .content {
   padding: 0.5rem 1rem 0.5rem 1.5rem;
+  width: 100%;
   color: black;
   display: flex;
   justify-content: center;
-  embed {
-    width: 80%;
-    height: 80vh;
-  }
 }
 </style>

@@ -22,7 +22,7 @@
           :key="reflectie"
           v-for="(reflectie, key) in leerdoel.reflecties"
         >
-          <span style="font-weight: bold">Reflectie: {{ key + 1 }}</span>
+          <span style="font-weight: bold">reflecties: {{ key + 1 }}</span>
 
           <p class="reflectie">{{ reflectie }}</p>
         </div>
@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import { inject } from "vue";
+
 export default {
   data() {
     return {
@@ -48,7 +50,9 @@ export default {
         {
           id: 1,
           leerdoel: "TEC",
-          reflectie: [""],
+          reflecties: [
+            "Geen idee hoe ik dit ga aantonen, maar ik verwacht dat het grootste deel aangetoond kan worden doormiddel van de groepsopdracht in het tweede deel van het semester",
+          ],
           description:
             "De student beheerst TEC (Technology, Entrepreneurship, Creativity) skills.",
           proof: [""],
@@ -56,28 +60,46 @@ export default {
         },
         {
           id: 2,
-          leerdoel:
-            "Stakeholder & Data",
-          reflectie: [""],
-          description: "De student kan een data gerelateerde uitdaging vereenvoudigd uitleggen aan de stakeholders.",
-          proof: [""],
+          leerdoel: "Stakeholder & Data",
+          reflecties: [
+            "Het grootste deel van deze leerdoel wil ik behalen door mijn powerbi leerdoel en deels aangetoont door de dataopdracht. Verder gaat dit ook hand in hand met de groepsopdracht die gedaan wordt for Rotterdam edge datacenters",
+          ],
+          description:
+            "De student kan een data gerelateerde uitdaging vereenvoudigd uitleggen aan de stakeholders.",
+          proof: [
+            {
+              name: "Dataopdracht powerbi",
+              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+            },
+            {
+              name: "Dataopdracht powerbi",
+              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+            },
+          ],
           dropped: false,
         },
         {
           id: 3,
-          leerdoel:
-            "Analyse",
-          reflectie: [""],
-          description: "De student is in staat een probleem vanuit diverse invalshoeken te analyseren (commercieel, techniek, functionaliteit, financieel, ethisch).",
-          proof: [""],
+          leerdoel: "Analyse",
+          reflecties: [
+            "Scenario Planning is een vak waarbij je risico's analyseert en vervolgens een plan ontwikkeld op basis van verschillende impactvolle risico's. Voor ons onderzoek hebben we gekeken naar wat de obstakels zijn voor elektrisch infrastructuur in 2032",
+          ],
+          description:
+            "De student is in staat een probleem vanuit diverse invalshoeken te analyseren (commercieel, techniek, functionaliteit, financieel, ethisch).",
+          proof: [
+            {
+              name: "Dataopdracht powerbi",
+              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+            },
+          ],
           dropped: false,
         },
         {
           id: 4,
-          leerdoel:
-            "Multidisciplinaire",
-          reflectie: [""],
-          description: "De student is in staat in multidisciplinaire teams samen te werken met verschillende expertisegebieden en vanuit verschillende gremia (de Triple Helix van overheid, onderwijs en bedrijfsleven).",
+          leerdoel: "Multidisciplinaire",
+          reflecties: ["Wat peerreviews"],
+          description:
+            "De student is in staat in multidisciplinaire teams samen te werken met verschillende expertisegebieden en vanuit verschillende gremia (de Triple Helix van overheid, onderwijs en bedrijfsleven).",
           proof: [""],
           dropped: false,
         },

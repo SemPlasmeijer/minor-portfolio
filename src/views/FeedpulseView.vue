@@ -16,21 +16,6 @@ export default {
   data() {
     return {
       activeId: 1,
-
-      itemList: [
-        {
-          id: 1,
-          title: "Wie ben ik?",
-        },
-        {
-          id: 2,
-          title: "Wat kan ik?",
-        },
-        {
-          id: 3,
-          title: "Wat wil ik leren?",
-        },
-      ],
     };
   },
 
