@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DescriptionView from '../views/DescriptionView.vue'
 import CertificatesView from '../views/CertificatesView.vue'
