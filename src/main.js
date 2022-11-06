@@ -45,9 +45,6 @@ Object.entries(components).forEach(([path, definition]) => {
   app.component(componentName, definition.default)
 })
 
-app.get("*", function (request, response) {
-    response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
-  });
 app.use(router)
 app.directive("tooltip", tooltip);
 app.component('font-awesome-icon', FontAwesomeIcon)
