@@ -10,6 +10,10 @@
     <div class="content">
       <BinnenStadBlogs v-if="activeId === 1"></BinnenStadBlogs>
       <CityMarketingBlogs v-if="activeId === 2"></CityMarketingBlogs>
+      <CommunicatieBlogs v-if="activeId === 4"></CommunicatieBlogs>
+      <ShiftBlogs v-if="activeId === 5"></ShiftBlogs>
+      <SPBlogs v-if="activeId === 6"></SPBlogs>
+      <OverigeBlogs v-if="activeId === 7"></OverigeBlogs>
     </div>
   </div>
 </template>
@@ -28,10 +32,6 @@ export default {
         {
           id: 2,
           title: "City Marketing",
-        },
-        {
-          id: 3,
-          title: "Lean",
         },
         {
           id: 4,
