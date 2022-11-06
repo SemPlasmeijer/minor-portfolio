@@ -67,7 +67,8 @@ const router = createRouter({
         enter: "animate__animated animate__slideInLeft",
       }
     }
-  ]
+  ],
+  mode: "history"
 })
 
 export default router
