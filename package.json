@@ -6,9 +6,7 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "postinstall": "npm run build",
-    "start": "node server.js",
-    "heroku-postbuild":
-  "NPM_CONFIG_PRODUCTION=false npm install --prefix client && vite build --prefix client"
+    "start": "node server.js"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
