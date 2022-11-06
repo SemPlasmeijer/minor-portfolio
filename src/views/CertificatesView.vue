@@ -1,16 +1,24 @@
 <template>
   <div class="viewContainer">
     <div class="title">Certificates</div>
-    <ContentSideBar
-      @selectItem="setActive"
-      :sideList="itemList"
-      :active="activeId"
-    />
     <Certs :certList="itemList"> </Certs>
     <div class="content">
-      <Cert1 v-if="activeId === 1"></Cert1>
-      <Cert2 v-if="activeId === 2"></Cert2>
-      <Cert3 v-if="activeId === 3"></Cert3>
+      <div class="linkToContent">
+        <ul>
+          <li>
+            <a target="_blank"
+              href="https://github.com/SemPlasmeijer/minor-portfolio/blob/main/src/assets/certificateDataAnalysis.pdf"
+              >Certificaat DataAnalysis</a
+            >
+          </li>
+          <li>
+            <a target="_blank"
+              href="https://github.com/SemPlasmeijer/minor-portfolio/blob/main/src/assets/certificateIntroduction.pdf"
+              >Certificaat Introduction</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -66,5 +74,23 @@ export default {
   color: black;
   display: flex;
   justify-content: center;
+
+  .linkToContent {
+    margin-top: 1rem;
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          border-bottom: 2px solid var(--vt-c-secondary);
+          box-shadow: inset 0 -4px 0 var(--vt-c-secondary);
+          color: inherit;
+          transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+          &:hover {
+            background: var(--vt-c-secondary);
+          }
+        }
+      }
+    }
+  }
 }
 </style>

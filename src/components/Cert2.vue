@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <embed src="/src/assets/certificateDataAnalysis.pdf" />
+    <embed src="/assets/certificateDataAnalysis.pdf" />
   </div>
 </template>
 <style scoped>
