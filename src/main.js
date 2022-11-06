@@ -45,7 +45,13 @@ Object.entries(components).forEach(([path, definition]) => {
   app.component(componentName, definition.default)
 })
 
-
+app.use(
+  cors({
+    origin: ['https://sem-smart-city-portfolio.herokuapp.com'],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT'],
+  })
+)
 app.use(router)
 app.directive("tooltip", tooltip);
 app.component('font-awesome-icon', FontAwesomeIcon)
