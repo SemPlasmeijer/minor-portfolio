@@ -7,8 +7,8 @@
       :active="activeId"
     />
     <div class="content">
-      <embed v-if="activeId === 1"  src="/src/assets/certificateDataAnalysis.pdf"/> 
-      <embed v-if="activeId === 2"  src="/src/assets/certificateIntroduction.pdf"/> 
+      <embed v-if="activeId === 1"  src="/assets/certificateDataAnalysis.pdf"/> 
+      <embed v-if="activeId === 2"  src="/assets/certificateIntroduction.pdf"/> 
       <embed v-if="activeId === 3"  src=""/> 
     </div>
   </div>
