@@ -35,7 +35,7 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
         </div>
         <div class="scrollOrCLick">
           If you like what you see <br />
-          <span class="secColor">Scroll Down</span>
+          <span class="secColor" @click="next()">Click me</span>
           <RouterLink class="itemInner" :to="'/description'">
             <font-awesome-icon
               class="arrow"
@@ -52,6 +52,16 @@ import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
     </div>
   </div>
 </template>
+<script>
+export default({
+  methods: {
+    next() { 
+      this.$router.push("/description")
+    }
+  }
+})
+</script>
+
 
 <style lang="scss" scoped>
 .home {
