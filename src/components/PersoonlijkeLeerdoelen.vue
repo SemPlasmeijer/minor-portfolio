@@ -26,7 +26,7 @@
 
           <p class="reflectie">{{ reflectie }}</p>
         </div>
-        <div class="linkToContent">
+        <div class="linkToContent" v-if="leerdoel.proof.length > 0">
           <span style="font-weight: bold">Bewijslast voor leerdoel</span>
           <ul>
             <li :key="file" v-for="file in leerdoel.proof">
@@ -53,7 +53,7 @@ export default {
           ],
           description:
             "Dit leerdoel zal voornamelijk focussen op een literatuuronderzoek gevolgd waarin eerst de vraag wil stellen in hoeverre de gezondheid achteruit is gegaan van jongere, welke wensen jongere zelf hebben, welke oplossingen er nu bestaan en hoe steden momenteel de jeugd aanmoedigt om meer te bewegen.",
-          proof: [""],
+          proof: [],
           dropped: false,
         },
         {
@@ -64,7 +64,7 @@ export default {
           ],
           description:
             "Startende met een derde data certificaat, wil ik een oude dataset gebruiken waarin ik al een aantal verschillende visualisaties heb gemaakt om deze te verbeteren en toe te passen in een nieuwe omgeving. Verder wil ik reflecteren op de voorgaande dataopdracht kijken wat ik nu anders moet/kan gaan doen om tot een beter resultaat te komen.",
-          proof: [""],
+          proof: [],
           dropped: false,
         },
         {
@@ -76,7 +76,7 @@ export default {
           ],
           description:
             "Dit onderwerp heb ik grotendeels overgeslagen in vorige semesters en dit heeft me in de weg gezeten bij mij laatste stage, waarin ik constante herzieningen moest maken in het ontwerp om aan alle doeleinde te voldoen. Startende met een literatuurstudie in de verschillende tools die momenteel in gebruik zijn en tools die in de toekomst mogelijk nog ontwikkeld gaan worden, welk effect typografie heeft op UX/UI, en de verschillen tussen Nederland en Internationaal. Hierop wil een onderzoek/test baseren op mijn eigen portfolio/canvas om te zien of deze voldoen aan de eisen/tools die in uit de literatuurstudie voort zijn gekomen.",
-          proof: [""],
+          proof: [],
           dropped: false,
         },
       ],

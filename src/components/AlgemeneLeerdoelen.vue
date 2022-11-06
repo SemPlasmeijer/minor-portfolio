@@ -26,7 +26,7 @@
 
           <p class="reflectie">{{ reflectie }}</p>
         </div>
-        <div class="linkToContent">
+        <div class="linkToContent" v-if="leerdoel.proof.length > 0">
           <span style="font-weight: bold">Bewijslast voor leerdoel</span>
           <ul>
             <li :key="file" v-for="file in leerdoel.proof">
@@ -172,7 +172,7 @@ export default {
           reflecties: ["Geloof me, deze website had veel iteraties"],
           description:
             "De student kan een iteratieve benadering hanteren om tot creatief handelen en denken aan te zetten.",
-          proof: [""],
+          proof: [],
           dropped: false,
         },
       ],

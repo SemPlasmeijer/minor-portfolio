@@ -26,7 +26,7 @@
 
           <p class="reflectie">{{ reflectie }}</p>
         </div>
-        <div class="linkToContent">
+        <div class="linkToContent" v-if="leerdoel.proof.length > 0">
           <span style="font-weight: bold">Bewijslast voor leerdoel</span>
           <ul>
             <li :key="file" v-for="file in leerdoel.proof">
@@ -55,7 +55,7 @@ export default {
           ],
           description:
             "De student beheerst TEC (Technology, Entrepreneurship, Creativity) skills.",
-          proof: [""],
+          proof: [],
           dropped: false,
         },
         {
@@ -97,10 +97,11 @@ export default {
         {
           id: 4,
           leerdoel: "Multidisciplinaire",
-          reflecties: ["Wat peerreviews"],
+          reflecties: ["Peer Reviews",
+          "Sem is een bijzonder motiverende toevoeging aan elk team. hij houd niet van uitstellen en zorgt hierdoor dat je altijd tijd over hebt aan het eind van de dag. Er is altijd een goede sfeer als Sem aanwezig is en dit zorgt voor een productieve en leuke omgeving. Als tip zou ik geven om niet te veel werk op te pakken van zijn groep, als hij denkt dat het niet gaat gebeuren gaat Sem alles zelf maken i.p.v. eerst communiceren met de verantwoordelijke."],
           description:
             "De student is in staat in multidisciplinaire teams samen te werken met verschillende expertisegebieden en vanuit verschillende gremia (de Triple Helix van overheid, onderwijs en bedrijfsleven).",
-          proof: [""],
+          proof: [],
           dropped: false,
         },
       ],
