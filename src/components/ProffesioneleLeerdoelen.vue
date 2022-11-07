@@ -98,7 +98,8 @@ export default {
           id: 4,
           leerdoel: "Multidisciplinaire",
           reflecties: ["Peer Reviews",
-          "Sem is een bijzonder motiverende toevoeging aan elk team. hij houd niet van uitstellen en zorgt hierdoor dat je altijd tijd over hebt aan het eind van de dag. Er is altijd een goede sfeer als Sem aanwezig is en dit zorgt voor een productieve en leuke omgeving. Als tip zou ik geven om niet te veel werk op te pakken van zijn groep, als hij denkt dat het niet gaat gebeuren gaat Sem alles zelf maken i.p.v. eerst communiceren met de verantwoordelijke."],
+            "Sem is een bijzonder motiverende toevoeging aan elk team. hij houd niet van uitstellen en zorgt hierdoor dat je altijd tijd over hebt aan het eind van de dag. Er is altijd een goede sfeer als Sem aanwezig is en dit zorgt voor een productieve en leuke omgeving. Als tip zou ik geven om niet te veel werk op te pakken van zijn groep, als hij denkt dat het niet gaat gebeuren gaat Sem alles zelf maken i.p.v. eerst communiceren met de verantwoordelijke.",
+          "Ik vond de samenwerking met Sem erg prettig. Aangezien we bezig waren met een data opdracht en daarin werkten met Power BI kon hij zijn kennis goed inzetten. Mede daarom hebben we de opdracht goed kunnen maken. Daarnaast verliep de communicatie goed dus zodoende beviel het samenwerken met Sem goed."],
           description:
             "De student is in staat in multidisciplinaire teams samen te werken met verschillende expertisegebieden en vanuit verschillende gremia (de Triple Helix van overheid, onderwijs en bedrijfsleven).",
           proof: [],
