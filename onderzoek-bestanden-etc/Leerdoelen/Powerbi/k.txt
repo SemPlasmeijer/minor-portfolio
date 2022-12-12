@@ -1,0 +1,28 @@
+maak een sheet van te voren
+
+Data tab
+summarization en data categories
+sort by month number 
+
+Power query editor
+
+import data
+waarom transform of edit data
+remove rows and columns
+mass changes
+type changes
+relations
+
+
+Reports
+formating 
+adding text fields
+renaming tabs
+sorting
+View tab styles
+filters
+
+format and no interactions
+
+
+drill downs and hierarchy
