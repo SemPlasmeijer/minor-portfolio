@@ -46,10 +46,6 @@ export default {
           link: "blogs",
         },
         {
-          popover: "Feedpulse",
-          link: "feedpulse",
-        },
-        {
           popover: "Certificates",
           link: "certificates",
         },
@@ -57,6 +53,11 @@ export default {
           popover: "Leerdoelen",
           link: "leerdoelen",
         },
+        {
+          popover: "Project",
+          link: "leerdoelen",
+        },
+
       ],
     };
   },

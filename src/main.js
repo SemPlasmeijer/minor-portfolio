@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* add some free styles */
-import { faArrowDownLong, faEnvelope, faUserSecret, faDatabase, faChevronCircleDown, faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
+import { faXmark,faBarsStaggered, faArrowDownLong, faEnvelope, faUserSecret, faDatabase, faChevronCircleDown, faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faTwitter, faPython, faVuejs } from '@fortawesome/free-brands-svg-icons'
 
 /* add each imported icon to the library */
@@ -24,7 +24,9 @@ library.add(faTwitter,
             faPython,
             faVuejs,
             faChevronCircleDown,
-            faChevronCircleUp)
+            faChevronCircleUp,
+            faBarsStaggered,
+            faXmark)
 
 
 import './assets/main.css'

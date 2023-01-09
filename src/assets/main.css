@@ -1,9 +1,4 @@
 @import "./base.css";
-
-#app {
-    background-color: var(--vt-c-white-soft);
-}
-
 a {
     text-decoration: none;
     outline: none;

@@ -5,8 +5,8 @@
       v-tooltip="popover"
       class="itemInner"
       :to="'/' + link"
-      >{{ popover }}</RouterLink
-    >
+      >{{ popover }}
+    </RouterLink>
   </div>
 </template>
 
