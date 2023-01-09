@@ -5,7 +5,7 @@ import LowerNavMenu from "./components/LowerNavMenu.vue";
 </script>
 <template>
   <div>
-    <div class="name">Sem Plasmeijer</div>
+    <router-link :to="'/'" class="name">SP</router-link>
 
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
@@ -42,9 +42,9 @@ export default {
 .name {
   z-index: 10;
   position: fixed;
-  top: 1%;
-  left: 1%;
-  color: white;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: var(--vt-c-black-soft);
   cursor: pointer;
   user-select: none;
   text-align: center;

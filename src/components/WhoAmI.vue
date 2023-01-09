@@ -8,7 +8,7 @@
         werkelijkheid terug te willen zien kwam ik erachter dat mijn passie niet
         in het vak lag. Met de gedachten dat ik nog steeds dingen wilden
         ontwikkelen en problemen wilden oplossen was ik 3 jaar geleden
-        overgestapt naar HBO ICT en sindsdien ben ik niet veranderd. Mijn vrije
+        overgestapt naar HBO ICT en sindsdien ben ik niet veranderd. Mijn vrwije
         tijd besteed ik voornamelijk aan sport, maar daarbuiten heb ik interesse
         in architectuur, UX UI, game development en tekenen en hoe mensen in
         deze vakken over problemen zijn heen gekomen.
