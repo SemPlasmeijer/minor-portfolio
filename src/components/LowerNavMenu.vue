@@ -121,7 +121,7 @@ nav {
   overflow: hidden;
   transition-timing-function: ease;
   transition-duration: 300ms;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
 }
 
 body[data-nav="true"] > #app > div > nav > #nav-links {

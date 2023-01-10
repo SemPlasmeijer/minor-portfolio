@@ -62,7 +62,7 @@ export default {
             {
               name: "Gezondheid en Slimme Steden",
               path:
-                inject("githubRef") + "Leerdoelen/Tech&Beweging/Movement.pdf",
+                inject("githubRef") + "Leerdoelen/Tech%26Beweging/Movement.pdf",
             },
           ],
           dropped: false,
