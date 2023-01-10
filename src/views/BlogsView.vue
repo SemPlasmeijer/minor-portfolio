@@ -1,84 +1,31 @@
 <template>
-  <div class="viewContainer">
-    <div class="title">Blogs</div>
-
-    <ContentSideBar
-      @selectItem="setActive"
-      :sideList="itemList"
-      :active="activeId"
-    />
-    <div class="content">
-      <BinnenStadBlogs v-if="activeId === 1"></BinnenStadBlogs>
-      <CityMarketingBlogs v-if="activeId === 2"></CityMarketingBlogs>
-      <CommunicatieBlogs v-if="activeId === 4"></CommunicatieBlogs>
-      <ShiftBlogs v-if="activeId === 5"></ShiftBlogs>
-      <SPBlogs v-if="activeId === 6"></SPBlogs>
-      <OverigeBlogs v-if="activeId === 7"></OverigeBlogs>
-    </div>
-  </div>
+  <main>
+    <section class="baseSection">
+      <section class="titleSection">
+        <h1>Thema's</h1>
+      </section>
+    </section>
+  </main>
 </template>
-<script>
-import BinnenStadBlogs from "../components/BinnenStadBlogs.vue";
-import CityMarketingBlogs from "../components/CityMarketingBlogs.vue";
-export default {
-  data() {
-    return {
-      activeId: 1,
-      itemList: [
-        {
-          id: 1,
-          title: "Binnenstad",
-        },
-        {
-          id: 2,
-          title: "City Marketing",
-        },
-        {
-          id: 4,
-          title: "Communicatie",
-        },
-        {
-          id: 5,
-          title: "Mensen maken de Shift",
-        },
-        {
-          id: 6,
-          title: "Scenario Planning",
-        },
-        {
-          id: 7,
-          title: "Overige",
-        },
-      ],
-    };
-  },
-  methods: {
-    setActive(id) {
-      this.activeId = id;
-    },
-  },
-  components: { BinnenStadBlogs, CityMarketingBlogs },
-};
-</script>
-<style scoped>
-.title {
-  border-top: 6px double var(--vt-c-black-soft);
-  border-bottom: 6px double var(--vt-c-black-soft);
-  font-family: "Major Mono Display", monospace;
-  font-weight: 400;
-  font-size: 50px;
-  text-align: center;
-  width: 100%;
-}
-.viewContainer {
+<style lang="scss" scoped>
+.titleSection {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../assets/screenshotThema.png");
+  background-size: cover;
+  background-position: center 0%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+  color: var(--vt-c-white-soft);
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-}
-.content {
-  padding: 0.5rem 1rem 0.5rem 1.5rem;
-  color: black;
+  align-items: center;
+  h1 {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size: 77px;
+  }
 }
 </style>

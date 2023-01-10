@@ -20,10 +20,7 @@
         active-class="active"
       >
         <h2 class="nav-link-label">Wie ben ik?</h2>
-        <img
-          class="nav-link-image"
-          src="../assets/profile.jpg"
-        />
+        <img class="nav-link-image" src="../assets/profile.jpg" />
       </router-link>
       <router-link
         @click="toggleNav"
@@ -44,10 +41,10 @@
         :to="'/leerdoelen'"
         active-class="active"
       >
-        <h2 class="nav-link-label">Leerdoelen</h2>
+        <h2 class="nav-link-label">Leerdoelen & Ontwikkeling</h2>
         <img
           class="nav-link-image"
-          src="https://images.unsplash.com/photo-1665910407771-bc84ad45676b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+          src="../assets/tim-mossholder-SZgVZPbQ7RE-unsplash.jpg"
         />
       </router-link>
       <router-link
@@ -56,11 +53,8 @@
         :to="'/blogs'"
         active-class="active"
       >
-        <h2 class="nav-link-label">Blogs</h2>
-        <img
-          class="nav-link-image"
-          src="https://images.unsplash.com/photo-1666005487638-61f45819c975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-        />
+        <h2 class="nav-link-label">Thema's</h2>
+        <img class="nav-link-image" src="../assets/screenshotThema.png" />
       </router-link>
       <router-link
         @click="toggleNav"
@@ -71,7 +65,7 @@
         <h2 class="nav-link-label">Certificates</h2>
         <img
           class="nav-link-image"
-          src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+          src="../assets/lewis-keegan-XQaqV5qYcXg-unsplash.jpg"
         />
       </router-link>
     </div>

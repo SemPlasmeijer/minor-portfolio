@@ -1,5 +1,6 @@
 <template>
   <div class="leerdoelContainer">
+    <h1>Algemene Leerdoelen</h1>
     <div
       class="leerdoelItem"
       :key="leerdoel.leerdoel"
@@ -202,7 +203,12 @@ export default {
 
 <style lang="scss">
 .leerdoelContainer {
-  margin-top: 2rem;
+  h1 {
+    margin-bottom: 3rem;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  padding-top: 6rem;
   margin-left: 5rem;
 
   .leerdoelItem {

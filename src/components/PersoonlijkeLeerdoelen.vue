@@ -1,5 +1,7 @@
 <template>
   <div class="leerdoelContainer">
+    <h1>Persoonlijke Leerdoelen</h1>
+
     <div
       class="leerdoelItem"
       :key="leerdoel.leerdoel"
@@ -40,6 +42,8 @@
 </template>
 
 <script>
+import { inject } from "@vue/runtime-core";
+import path from "path";
 export default {
   data() {
     return {
@@ -49,22 +53,43 @@ export default {
           id: 1,
           leerdoel: "Hoe kan de slimme stad gezondheid van jongere verbeteren?",
           reflecties: [
-            "Voor dit leerdoel ben ik van plan een aantal verschillende leerdoelen op te zetten hieraan zal ik de week van 7 November te starten. Als ik veel verschillende data bronnen kan vinden wil ik dit leerdoel mogelijk verbinden met de PowerBI leerdoel.",
+            "Voor dit leerdoel ben ik van plan een aantal verschillende leerdoelen op te zetten hieraan zal ik de week van 7 November te starten. Als ik veel verschillende databronnen kan vinden wil ik dit leerdoel mogelijk verbinden met de PowerBI leerdoel.",
+            "Om dit leerdoel aan te tonen wilde ik twee dingen doen, hoe zou een slimme stad de gezondheid van jongeren kunnen verbeteren en hoe zou een kleine gemeente zoals mijn eigen gemeente Drimmelen dit kunnen aanpakken zonder een groot budget om verschillende sensoren en dergelijke te gebruiken. Ik kwam er al gauw achter hoe divers de problemen zijn van overgewicht en drugsgebruik onder jongeren tot mentale problemen zoals faalangst en slapeloosheid. Om voor oplossingen te zoeken heb ik eerst gekeken naar de oorzaak van de meeste gevallen, en vervolgens een technologisch antwoord op gezocht. Vervolgens heb ik naar mijn eigen gemeente gekeken, mensen van mijn gemeenteraad ondervraagd over hoe zij problemen onder jeugd tackelen en er gauw achter gekomen hoe de gemeente Drimmelen door zijn unieke omstandigheden een alternatieve vorm van dataverzameling heeft gedaan zonder hiervoor de meest geavanceerde technologieën te gebruiken. Als ik dit project nogmaals zou mogen aanpakken zou ik verder willen inkijken op hoe andere gemeentes in de diepte problemen onder de jeugd tackelen, en een mogelijk goedkopere of haalbare oplossingen vinden die zelfs de kleinere gemeentes kunnen gebruiken.",
           ],
           description:
             "Dit leerdoel zal voornamelijk focussen op een literatuuronderzoek gevolgd waarin eerst de vraag wil stellen in hoeverre de gezondheid achteruit is gegaan van jongere, welke wensen jongere zelf hebben, welke oplossingen er nu bestaan en hoe steden momenteel de jeugd aanmoedigt om meer te bewegen.",
-          proof: [],
+          proof: [
+            {
+              name: "Gezondheid en Slimme Steden",
+              path:
+                inject("githubRef") + "Leerdoelen/Tech&Beweging/Movement.pdf",
+            },
+          ],
           dropped: false,
         },
         {
           id: 2,
           leerdoel: "Hoe visualiseer je data in PowerBI?",
           reflecties: [
-            "Tijdens de Barcelona trip zal ik Nederland blijven, ik ben van plan deze week het volledige PowerBi leerdoel te behalen. Hiervoor wil ik een certificaat behalen via datacamp en daarnaast een video opnemen voor studenten die volgend sememster ook powerbi willen gebruiken als data visualisatie platform.",
+            "Tijdens de Barcelona trip zal ik Nederland blijven, ik ben van plan deze week het volledige PowerBI leerdoel te behalen. Hiervoor wil ik een certificaat behalen via datacamp en daarnaast een video opnemen voor studenten die volgend semester ook PowerBI willen gebruiken als data visualisatie platform.",
+            "Voor dit leerdoel was ik begonnen met een certificaat te behalen van datacamp rondom het gebruik van PowerBI. Deze course vond ik zelf best lang voor de informatie die je krijgt, maar zorgde voor een goede basis waar ik later op kon bouwen. Als ik mijn eerste PowerBI opdracht vergelijk met het bestand dat ik heb gemaakt voor dit leerdoel is er visueel niet veel veranderd, maar de verbetering was duidelijk te zien in hoe snel en hoe dynamisch ik nu dashboarden in elkaar kon zetten. Als ik nu een nieuw dashboard zou willen creeren zal ik wel meer letten op visualisatie zelf, dit is deels onderbouwd met mijn nieuwe kennis voer UI UX, maar een gastles gegeven door Jugo over data visualisatie standaarden heeft mij een nieuwe diepte van kennis gegeven die ik zeker in de toekomst wou willen toepassen. ",
           ],
           description:
             "Startende met een derde data certificaat, wil ik een oude dataset gebruiken waarin ik al een aantal verschillende visualisaties heb gemaakt om deze te verbeteren en toe te passen in een nieuwe omgeving. Verder wil ik reflecteren op de voorgaande dataopdracht kijken wat ik nu anders moet/kan gaan doen om tot een beter resultaat te komen.",
-          proof: [],
+          proof: [
+            {
+              name: "A quick guide to powerbi by Sem Plasmeijer",
+              path: "https://youtu.be/ad-dnxfRTvc",
+            },
+            {
+              name: "Eerste powerbi design",
+              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
+            },
+            {
+              name: "Tweede powerbi design",
+              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
+            },
+          ],
           dropped: false,
         },
         {
@@ -72,11 +97,25 @@ export default {
           leerdoel:
             "Hoe ontwikkel je UX/UI voor slechtziende en andere handicaps?",
           reflecties: [
-            "Dit leerdoel wil ik als laatste oppakken van de drie, ik heb al een aantal verschillende boeken aangeraden gekregen een ervan is 'Inclusive Design for a Digital World'. Verder heb ik al een klein idee over de onderwerpen die ik wil behandelen. Om dit leerdoel te behalen wilde ik een podcast of blog schrijven over hoe Fontys zijn eigen websites/canvas zou kunnen verbeteren om allerlei verschillende studenten te kunnen accomoderen. Een ander leuk idee was om mijn eigen portfolio juist in de tegenovergestelde manier in te richten met een klik om de knop.",
+            "Dit leerdoel wil ik als laatste oppakken van de drie, ik heb al een aantal verschillende boeken aangeraden gekregen een ervan is 'Inclusive Design for a Digital World'. Verder heb ik al een klein idee over de onderwerpen die ik wil behandelen. Om dit leerdoel te behalen wilde ik een podcast of blog schrijven over hoe Fontys zijn eigen websites/canvas zou kunnen verbeteren om allerlei verschillende studenten te kunnen accommoderen. Een ander leuk idee was om mijn eigen portfolio juist in de tegenovergestelde manier in te richten met een klik om de knop.",
+            "Om dit leerdoel aan te tonen heb ik een onderzoek gedaan naar de geschiedenis van webdesign, oplossingen voor verschillende handicaps en tot slot heb ik deze kennis toegepast om een aantal pagina’s binnen canvas te verbeteren. Als ik hierop terugkijk ben ik tevreden met wat ik heb geleerd, en heb ik ook deels met deze gedachten mijn eigen portfolio verbeterd, Als iets klikbaar is dan heeft het een duidelijkere animatie dan voorheen, ik heb de kleuren veranderd om minder vervelend te zijn op het oog, zonder al te veel contrast te verliezen. Alle links en teksten hebben nu een eigen functie en worden niet meerdere keren door elkaar heen gebruikt. Als ik meer tijd had gehad dan had ik waarschijnlijk meerdere van mijn oude projecten willen vergelijken en mogelijk meer van Canvas willen verbeteren, maar overall heb ik nu een betere basis waar ik de komende jaren op kan bouwen en ontwerpen.",
           ],
           description:
             "Dit onderwerp heb ik grotendeels overgeslagen in vorige semesters en dit heeft me in de weg gezeten bij mij laatste stage, waarin ik constante herzieningen moest maken in het ontwerp om aan alle doeleinde te voldoen. Startende met een literatuurstudie in de verschillende tools die momenteel in gebruik zijn en tools die in de toekomst mogelijk nog ontwikkeld gaan worden, welk effect typografie heeft op UX/UI, en de verschillen tussen Nederland en Internationaal. Hierop wil een onderzoek/test baseren op mijn eigen portfolio/canvas om te zien of deze voldoen aan de eisen/tools die in uit de literatuurstudie voort zijn gekomen.",
-          proof: [],
+          proof: [
+            {
+              name: "Blog over UIUX",
+              path: inject("githubRef") + "Leerdoelen/UIUX/blog.pdf",
+            },
+            {
+              name: "Artikel met voorbeelden van oogziektes",
+              path: "https://oogfonds.nl/onze-ogen/feiten-en-cijfers/",
+            },
+            {
+              name: "Video over hoe het meest gebruik UI element slecht kan zijn",
+              path: "https://www.youtube.com/watch?v=hcYAHix-riY",
+            },
+          ],
           dropped: false,
         },
       ],

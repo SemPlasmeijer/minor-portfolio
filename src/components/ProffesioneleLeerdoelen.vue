@@ -1,5 +1,7 @@
 <template>
   <div class="leerdoelContainer">
+    <h1>Profesionele Leerdoelen</h1>
+
     <div
       class="leerdoelItem"
       :key="leerdoel.leerdoel"
@@ -52,6 +54,7 @@ export default {
           leerdoel: "TEC",
           reflecties: [
             "Geen idee hoe ik dit ga aantonen, maar ik verwacht dat het grootste deel aangetoond kan worden doormiddel van de groepsopdracht in het tweede deel van het semester",
+            "Tijdens dit semester heb ik voor de drie onderwerpen verschillende projecten en opdrachten gemaakt. Voor Technology heb ik tijdens mijn project gekeken naar de technologische limitatie van 5G en hoe deze vermijdt kunnen worden door edge datacenters. Voor Entrepreneurship heb ik gekeken naar verschillende economische verdienmodellen van edge datacenters, maar ook hoe UI UX een impact kan hebben op de uitstraling van je imago en retentie op je website. Tot slot voor Creativity heb ik gekeken heb ik me verdiept in hoe ontworpen kan worden zonder verschillende groepen uit te sluiten  ",
           ],
           description:
             "De student beheerst TEC (Technology, Entrepreneurship, Creativity) skills.",
@@ -68,12 +71,24 @@ export default {
             "De student kan een data gerelateerde uitdaging vereenvoudigd uitleggen aan de stakeholders.",
           proof: [
             {
-              name: "Dataopdracht powerbi",
-              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+              name: "Eerste powerbi design",
+              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
             },
             {
-              name: "Dataopdracht powerbi",
-              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+              name: "Tweede powerbi design",
+              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
+            },
+            {
+              name: "Onderzoeksrapport edge datacenters Rotterdam",
+              path:
+                inject("githubRef") +
+                "/EdgeDatacenterRotterdam/EdgeDatacenterOnderzoeksRapport.pdf",
+            },
+            {
+              name: "Onderzoeksrapport edge datacenters Rotterdam pptx",
+              path:
+                inject("githubRef") +
+                "/EdgeDatacenterRotterdam/EdgeDataCenter.pptx",
             },
           ],
           dropped: false,
@@ -88,8 +103,8 @@ export default {
             "De student is in staat een probleem vanuit diverse invalshoeken te analyseren (commercieel, techniek, functionaliteit, financieel, ethisch).",
           proof: [
             {
-              name: "Dataopdracht powerbi",
-              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+              name: "Risk Analysis",
+              path: inject("githubRef") + "Sp/LinkBovenSP.pdf",
             },
           ],
           dropped: false,
@@ -97,9 +112,11 @@ export default {
         {
           id: 4,
           leerdoel: "Multidisciplinaire",
-          reflecties: ["Peer Reviews",
+          reflecties: [
+            "Peer Reviews",
             "Sem is een bijzonder motiverende toevoeging aan elk team. hij houd niet van uitstellen en zorgt hierdoor dat je altijd tijd over hebt aan het eind van de dag. Er is altijd een goede sfeer als Sem aanwezig is en dit zorgt voor een productieve en leuke omgeving. Als tip zou ik geven om niet te veel werk op te pakken van zijn groep, als hij denkt dat het niet gaat gebeuren gaat Sem alles zelf maken i.p.v. eerst communiceren met de verantwoordelijke.",
-          "Ik vond de samenwerking met Sem erg prettig. Aangezien we bezig waren met een data opdracht en daarin werkten met Power BI kon hij zijn kennis goed inzetten. Mede daarom hebben we de opdracht goed kunnen maken. Daarnaast verliep de communicatie goed dus zodoende beviel het samenwerken met Sem goed."],
+            "Ik vond de samenwerking met Sem erg prettig. Aangezien we bezig waren met een data opdracht en daarin werkten met Power BI kon hij zijn kennis goed inzetten. Mede daarom hebben we de opdracht goed kunnen maken. Daarnaast verliep de communicatie goed dus zodoende beviel het samenwerken met Sem goed.",
+          ],
           description:
             "De student is in staat in multidisciplinaire teams samen te werken met verschillende expertisegebieden en vanuit verschillende gremia (de Triple Helix van overheid, onderwijs en bedrijfsleven).",
           proof: [],
