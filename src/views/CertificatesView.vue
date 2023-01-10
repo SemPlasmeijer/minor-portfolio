@@ -72,6 +72,7 @@ export default {
   text-align: center;
   width: 100%;
 }
+
 .viewContainer {
   display: flex;
   justify-content: center;

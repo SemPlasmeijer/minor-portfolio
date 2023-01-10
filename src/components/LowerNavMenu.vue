@@ -54,7 +54,10 @@
         active-class="active"
       >
         <h2 class="nav-link-label">Thema's</h2>
-        <img class="nav-link-image" src="../assets/screenshotThema.png" />
+        <img
+          class="nav-link-image"
+          src="../assets/joshua-rawson-harris-KRELIShKxTM-unsplash.jpg"
+        />
       </router-link>
       <router-link
         @click="toggleNav"
