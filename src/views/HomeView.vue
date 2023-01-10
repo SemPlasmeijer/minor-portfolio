@@ -1,12 +1,38 @@
 import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
 <template>
   <main>
-   
+    <section class="baseSection">
+      <section class="titleSection">
+        <h1>Smart City Minor Portfolio</h1>
+        <h1>Sem Plasmeijer</h1>
+      </section>
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-  background-image: url("https://images.unsplash.com/photo-1672872476232-da16b45c9001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format");
+  .titleSection {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.5)),
+      url("../assets/pedro-lastra-Nyvq2juw4_o-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+    color: var(--vt-c-white-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: var(--vt-c-secondary);
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 77px;
+    }
+  }
 }
 </style>

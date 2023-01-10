@@ -10,7 +10,7 @@
         <h2 class="nav-link-label">home</h2>
         <img
           class="nav-link-image"
-          src="https://images.unsplash.com/photo-1666091863721-54331a5db52d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+          src="../assets/pedro-lastra-Nyvq2juw4_o-unsplash.jpg"
         />
       </router-link>
       <router-link

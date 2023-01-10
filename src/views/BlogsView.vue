@@ -246,10 +246,163 @@
         </section>
       </section>
       <section class="themaSection veiligheid">
-        <h1>Veiligheid</h1>
+        <section class="left">
+          <img
+            src="../assets/enrique-alarcon-s8bX9IgG9rA-unsplash.jpg"
+            alt=""
+          />
+        </section>
+        <section class="right">
+          <h1>Veiligheid</h1>
+          <p>
+            Veiligheid staat altijd in contrast met vrijheid & privacy. Hoeveel
+            van één wil je opgeven om de andere te verbeteren. In de slimme stad
+            zoeken we naar de oplossingen zonder de andere te verminderen.
+          </p>
+          <section class="reflectie">
+            <h2>Reflectie</h2>
+            <p>
+              Terug naar de Sorama gastles waar uitlegt werd hoe geluidssensoren
+              op een meer private manier van veiligheidswaarborgen konden leiden
+              zonder dat politie efficiency daalde. Maar de veiligheidscamera
+              loopt er niet meer op achter. Doormiddel van AI worden gezichten
+              nu in real-time onherkenbaar gemaakt, maar worden nu ook grote van
+              groepen bepaalt en kunnen voordat ongevallen gebeuren vroegtijdig
+              politie worden ingezet.
+              <br />
+              <br />
+              Terwijl veiligheid in de stad belangrijk is, wordt het ook steeds
+              belangrijker in hoe onze data gebruikt wordt voor verschillende
+              doeleinde. Tijdens het onderzoek rondom Big Data werd het binnen
+              onze groep al gauw duidelijk hoe algoritmes fout kunnen worden
+              gebruikt zowel opzettelijk als per ongeluk.
+              <br />
+              <br />
+              Een podcast die zowel de gevaren van AI, maar ook zijn kansen
+              bespreekt is Nvidia's The AI Podcast, en een podcast rondom hoe
+              onveilig sommige van onze apparaten beveiligd kunnen zijn is
+              Smashing Security.
+              <br />
+              <br />
+              Veiligheid is een onderwerp dat ik intressant vindt, maar in mijn
+              ogen lastig is om intressant over te brengen. De twee podcasts
+              hierboven bespreken met experts op de juiste manier deze
+              informatie.
+            </p>
+          </section>
+          <div class="linkToContent">
+            <h2>Bronnen</h2>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/EdgeDatacenterRotterdam/EdgeDatacenterOnderzoeksRapport.pdf"
+                  >EdgeDatacenters</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://open.spotify.com/show/4TB4pnynaiZ6YHoKmyVN0L"
+                  >The AI Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href=" https://open.spotify.com/show/3J7pBxEu43nCnRTSXaan8S"
+                  >Smashing Security Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Binnenstad/BinnenstadComplete.pptx"
+                  >Binnenstad Idee Brainstorm</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
       <section class="themaSection duurzaamheid">
-        <h1>Duurzaamheid</h1>
+        <section class="left">
+          <h1>Duurzaamheid</h1>
+          <p>
+            Duurzaamheid is het idee dat een product of service niet nadelig is
+            op het lange termijn vanaf gebruik tot hergebruik. Binnen de slimme
+            stad kan het gezien worden als verbeteringen van energie gebruik
+            zodat deze energie neutraal worden.
+          </p>
+          <section class="reflectie">
+            <h2>Reflectie</h2>
+            <p>
+              Veel gasten hebben gesproken over een duurzame manier van
+              ontwikkelen. VDL wilt een smartpole ontwikkelen die
+              toekomstbestendig is, en hergebruikt kan worden wanneer nieuwe
+              uitvindingen plaatsvinden. Heijmans maakt hergebruik van
+              materialen wanneer ze een gebouw herbouwen/slopen. Sorama gebruikt
+              geluidsdetectie om hoog uitstootende auto's te detecteren.
+              <br />
+              <br />
+              Binnen edge datacenter onderzoek waren gelijksoortige ideeën
+              gevonden het maken van een digital twin om zo de uitstoot van
+              specifieke locaties te vinden en uitstoot bij de bron aan te
+              pakken. Het versnellen en efficiënter maken van industietereinen
+              zodat deze minder verkeer nodig hebben. Auto verkeer omleiden
+              zodat deze minder langstil staan doormiddel van real-time data
+              collectie en toepassing.
+              <br />
+              <br />
+              Tot slot is er de motivatie om het openbaarvervoer te verbeteren
+              door verschillende partijen. Het gebruik van real-time data om
+              treinen in te zetten op basis van drukte in plaats van
+              tijdsgebonden. Of de uitbreiding van deelverkeer naar enkel
+              voertuigen zoals steppen, fietsen en scooters waar een aantal jaar
+              geleden alleen deelauto's bestonden.
+              <br />
+              <br />
+              Dit onderwerp is mijn ogen het meest aangeraakte tijdens de minor
+              doordat ieder ander thema rekening moet houden met hoe het
+              gebruikt moet worden in toekomst.
+            </p>
+          </section>
+          <div class="linkToContent">
+            <h2>Bronnen</h2>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/EdgeDatacenterRotterdam/EdgeDatacenterOnderzoeksRapport.pdf"
+                  >EdgeDatacenters</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/SemPlasmeijer/minor-portfolio/tree/stupid-effort/onderzoek-bestanden-etc/Leerdoelen/Tech%26Beweging/Movement.pdf"
+                  >Gezondheid & Smart Cities</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/SemPlasmeijer/minor-portfolio/tree/stupid-effort/onderzoek-bestanden-etc/Leerdoelen/Tech%26Beweging/Breikbaarheid.pptx"
+                  >Bereikbaarheid in de smart city</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="right">
+          <section class="innerLeft">
+            <img src="../assets/ricardo-gomez-angel-WsEAiVwGrwo-unsplash.jpg" />
+          </section>
+          <section class="innerRight">
+            <img src="../assets/pop-zebra-kJZSIXoXrUE-unsplash.jpg" />
+            <img src="../assets/no-revisions-ixS7UCRJTdM-unsplash.jpg" />
+          </section>
+        </section>
       </section>
     </section>
   </main>
@@ -401,6 +554,7 @@
     img {
       object-fit: cover;
       width: 50vw;
+      height: 100vh;
     }
   }
   .right {
@@ -425,9 +579,93 @@
   }
 }
 .veiligheid {
-  background-color: var(--vt-c-secondary);
+  display: flex;
+  .left {
+    width: 50vw;
+    img {
+      object-fit: cover;
+      width: 50vw;
+      height: 100vh;
+    }
+  }
+  .right {
+    p {
+      margin: 1rem 0rem;
+      margin-left: 40px;
+    }
+    width: 50vw;
+    flex: 1;
+    padding-top: 6rem;
+    padding-left: 7rem;
+    padding-right: 20rem;
+    h1 {
+      color: var(--vt-c-black-soft);
+      user-select: none;
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 40px;
+    }
+    background-color: var(--vt-c-secondary);
+    .linkToContent {
+      ul {
+        li {
+          a {
+            border-bottom: 2px solid var(--vt-c-third);
+            box-shadow: inset 0 -4px 0 var(--vt-c-third);
+            &:hover {
+              background: var(--vt-c-third);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .duurzaamheid {
   background-color: var(--vt-c-third);
+  display: flex;
+  .left {
+    p {
+      margin: 1rem 0rem;
+      margin-left: 40px;
+    }
+    width: 50vw;
+    flex: 1;
+    padding-top: 6rem;
+    padding-left: 7rem;
+    padding-right: 20rem;
+    h1 {
+      color: var(--vt-c-black-soft);
+      user-select: none;
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 40px;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex: 0;
+    width: 50vw;
+    max-height: 100vh;
+
+    .innerLeft {
+      img {
+        object-fit: cover;
+        max-height: 100vh;
+      }
+    }
+    .innerRight {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      img {
+        object-fit: cover;
+        margin-bottom: 2vh;
+        margin-left: 1vw;
+        max-height: 49vh;
+      }
+    }
+  }
 }
 </style>
