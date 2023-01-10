@@ -105,14 +105,14 @@ export default {
           proof: [
             {
               name: "Blog over UIUX",
-              path: inject("githubRef") + "Leerdoelen/UIUX/blog.pdf",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/UIUX/Blog.pdf",
             },
             {
               name: "Artikel met voorbeelden van oogziektes",
               path: "https://oogfonds.nl/onze-ogen/feiten-en-cijfers/",
             },
             {
-              name: "Video over hoe het meest gebruik UI element slecht kan zijn",
+              name: "Video over hoe het meest gebruikte UI element slecht kan zijn",
               path: "https://www.youtube.com/watch?v=hcYAHix-riY",
             },
           ],
