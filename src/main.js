@@ -4,6 +4,8 @@ import tooltip from "./tooltip.js";
 import router from './router'
 import "@/assets/tooltip.css";
 
+
+
 //fontawesome library and such
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import the fontawesome core */
@@ -53,3 +55,43 @@ app.use(router)
 app.directive("tooltip", tooltip);
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount("#app");
+
+// Import the functions you need from the SDKs you need
+
+import { initializeApp } from "firebase/app";
+
+import { getAnalytics } from "firebase/analytics";
+
+// TODO: Add SDKs for Firebase products that you want to use
+
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+
+// Your web app's Firebase configuration
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyAyB3HjxjLm1fjWikWBiXXxS-lNEgClpsI",
+
+  authDomain: "smartcityportfolio.firebaseapp.com",
+
+  projectId: "smartcityportfolio",
+
+  storageBucket: "smartcityportfolio.appspot.com",
+
+  messagingSenderId: "221899144946",
+
+  appId: "1:221899144946:web:1a6689edd213d6a599da6b",
+
+  measurementId: "G-Q5SNWKNC17"
+
+};
+
+
+// Initialize Firebase
+
+const firebaseApp = initializeApp(firebaseConfig);
+
+const analytics = getAnalytics(app);
