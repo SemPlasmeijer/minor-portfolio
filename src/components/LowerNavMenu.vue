@@ -22,7 +22,7 @@
         <h2 class="nav-link-label">Wie ben ik?</h2>
         <img
           class="nav-link-image"
-          src="https://images.unsplash.com/photo-1666055642230-1595470b98fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=995&q=80"
+          src="../assets/profile.jpg"
         />
       </router-link>
       <router-link
@@ -34,7 +34,7 @@
         <h2 class="nav-link-label">Project</h2>
         <img
           class="nav-link-image"
-          src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+          src="../assets/sergey-raikin-ZOOt4tQXe9g-unsplash.jpg"
         />
       </router-link>
 
@@ -53,7 +53,7 @@
       <router-link
         @click="toggleNav"
         class="nav-link"
-        :to="'/description'"
+        :to="'/blogs'"
         active-class="active"
       >
         <h2 class="nav-link-label">Blogs</h2>
@@ -90,7 +90,7 @@ export default {
     },
     spinTrack(event) {
       document.querySelector("#nav-links").style.transform = `translateX(-${
-        event.clientX / 2 
+        event.clientX / 2
       }px)`;
     },
     resetTrack() {
@@ -124,8 +124,7 @@ nav {
   overflow: hidden;
   transition-timing-function: ease;
   transition-duration: 300ms;
-    transform: translateY(-70%) 
-
+  transform: translateY(-70%);
 }
 
 body[data-nav="true"] > #app > div > nav > #nav-links {

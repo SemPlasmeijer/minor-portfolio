@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="baseSection">
+    <section class="baseSection" @scroll="trackImages" ref="base">
       <section class="titleSection">
         <h1 class="title">
           Ik ben Sem Plasmeijer student & developer met een passie voor coole
@@ -84,12 +84,24 @@ export default {
         document.querySelector("#WhoWhatWhen").style.opacity = 1;
       }, 300);
     },
+    trackImages(event) {
+      console.log(this.$refs.base.scrollTop);
+
+      document.querySelector(
+        ".pictureSection"
+      ).style.transform = `translateX(-${this.$refs.base.scrollTop / 10}px)`;
+      document.querySelector(
+        ".pictureSection2"
+      ).style.transform = `translateX(${this.$refs.base.scrollTop / 10}px)`;
+    },
   },
   components: { WhoAmI },
 };
 </script>
 <style lang="scss" scoped>
 .titleSection {
+  padding-top: 6rem;
+
   margin-left: 2rem;
   width: 60vw;
   padding-right: 1rem;
@@ -115,9 +127,10 @@ export default {
 .pictureSection2 {
   padding-right: 2rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
+
   display: flex;
   flex-direction: row-reverse;
-  background-color: #f2efe6;
   img {
     width: 38vw;
     aspect-ratio: 1/1.1;
@@ -127,7 +140,7 @@ export default {
 }
 
 .whoSection {
-  background-color: #f2efe6;
+  background-color: var(--vt-c-fourth);
   p {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -156,7 +169,7 @@ export default {
     transform: scale(0.9);
     border-radius: 5rem;
     cursor: pointer;
-    background: #f2efe6;
+    background: var(--vt-c-fourth);
     transition: transform, background-color;
     transition-timing-function: ease;
     transition-duration: 400ms;
