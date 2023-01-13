@@ -60,12 +60,12 @@ export default {
             "Dit leerdoel zal voornamelijk focussen op een literatuuronderzoek gevolgd waarin eerst de vraag wil stellen in hoeverre de gezondheid achteruit is gegaan van jongere, welke wensen jongere zelf hebben, welke oplossingen er nu bestaan en hoe steden momenteel de jeugd aanmoedigt om meer te bewegen.",
           proof: [
             {
-              name: "Gezondheid en Slimme Steden pptx",
-              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/EdgeDatacenterRotterdam/EdgeDataCenter.pptx",
+              name: "Gezondheid en Slimme Steden pdf",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/Tech%26Beweging/Movement.pdf",
             },
             {
-              name: "Gezondheid en Slimme Steden pdf",
-              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/EdgeDatacenterRotterdam/EdgeDatacenterOnderzoeksRapport.pdf",
+              name: "Gezondheid en Slimme Steden pptx",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/Tech%26Beweging/Bereikbaarheid.pptx",
             },
           ],
           dropped: false,

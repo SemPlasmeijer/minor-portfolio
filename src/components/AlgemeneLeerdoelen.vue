@@ -63,7 +63,7 @@ export default {
             },
             {
               name: "Gezondheid Jeugd & Slimme steden",
-              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/EdgeDatacenterRotterdam/EdgeDataCenter.pptx",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/Tech%26Beweging/Movement.pdf",
             },
           ],
           dropped: false,

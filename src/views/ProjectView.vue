@@ -105,7 +105,7 @@ export default {
               name: "Onderzoeksrapport edge datacenters Rotterdam powerpoint",
               path:
                 inject("githubRef") +
-                "/EdgeDatacenterRotterdam/EdgeDatacenter.pptx",
+                "/EdgeDatacenterRotterdam/EdgeDataCenter.pptx",
             },
           ],
         },
