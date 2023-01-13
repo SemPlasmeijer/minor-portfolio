@@ -38,7 +38,7 @@ import './assets/main.css'
 const app = createApp(App)
 
 /* Global Vars */
-app.provide('githubRef', 'https://github.com/SemPlasmeijer/minor-portfolio/tree/main/onderzoek-bestanden-etc/')
+app.provide('githubRef', 'https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/')
 
 const components = import.meta.globEager('./components/*.vue')
 

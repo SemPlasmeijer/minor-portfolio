@@ -51,7 +51,8 @@ export default {
           id: 0,
           leerdoel: "Data verzamelen",
           reflecties: [
-            "Dit onderwerp ligt dichtbij voorgaande semesters. Data verzamelen kan op een spectrum geplaatst worden met op de x-as van automatisch naar persoonlijk, en de op y-as van vrijwillig of onvrijwillig. Simpelweg automatisch onvrijwillig is de meest voorkomende vorm met sensoren, camera's of pin informatie die opgenomen wordt. Automatisch vrijwilig komt niet vaak voor maar ticket checkins is er een voorbeeld van. Vrijwilig persoonlijk komt het meest voor in de vorm van enquettes waarbij mensen op straat vragen stellen. en tot slot onvrijwillig persoonlijk is simpelweg observatie in of participatie onderzoeken.",
+            "Dit onderwerp ligt dichtbij voorgaande semesters. Data verzamelen kan op een spectrum geplaatst worden met op de x-as van automatisch naar persoonlijk, en de op y-as van vrijwillig of onvrijwillig. Simpelweg automatisch onvrijwillig is de meest voorkomende vorm met sensoren, camera's of pin informatie die opgenomen wordt. Automatisch vrijwillig komt niet vaak voor maar ticket check-ins is er een voorbeeld van. Vrijwillig persoonlijk komt het meest voor in de vorm van enquêtes waarbij mensen op straat vragen stellen. Tot slot, onvrijwillig persoonlijk is simpelweg observatie in of participatie onderzoeken",
+            "Sindsdien heb ik tijdens mijn onderzoek rondom gezondheid van jongeren in slimme steden ook overleg gehad met een aantal gemeenteraadsleden. En hoe zij data verzamelen in kleinere gemeentes zoals gemeente Drimmelen. De gemeente werkt samen met de middelbare scholen om de informatie via enquêtes, maar ook via lessen om meer te weten te komen over de jeugd in de gemeente. Gemeentes kunnen op minder technologische manieren hun unieke features gebruiken om data te verzamelen die belangrijk is voor hun gemeente en hun gemeente alleen.",
           ],
           description:
             "De student kan (innovatieve) mogelijkheden om data te verzamelen benoemen en toepassen.",
@@ -59,6 +60,10 @@ export default {
             {
               name: "Artikel: data collection",
               path: "https://www.techtarget.com/searchcio/definition/data-collection",
+            },
+            {
+              name: "Gezondheid Jeugd & Slimme steden",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/EdgeDatacenterRotterdam/EdgeDataCenter.pptx",
             },
           ],
           dropped: false,
@@ -88,10 +93,28 @@ export default {
           leerdoel: "Data management",
           reflecties: [
             "Vergelijkbaar met het vorige leerdoel, tijdens dit semester tijdens de dataopdracht werd ik geplaatst in de opslag en opschoning van de data in powerbi. Doordat mijn kennis over het programma nog niet heel diep was, was dit niet heel efficient gedaan. Ik wil dit leerdoel beter aantonen met mijn persoonlijke leerdoel PowerBi.",
+            "Sindsdien heb ik verbeteringen gemaakt in hoe ik data verwerk en bekijk in mijn persoonlijke leerdoel, tijdens de big data opdracht hadden mijn groep en ik ons verbreed over hoe data verkeerd gebruikt kan worden door zowel mensen, maar ook algorithmes.",
           ],
           description:
             "De student leert het belang van verschillende aspecten van data management, zoals recht en ethiek, data opslag, data opschoning en data aggregatie.",
-          proof: [inject("githubRef") + "Data/DataOpdracht.pbix"],
+          proof: [
+            {
+              name: "A quick guide to powerbi by Sem Plasmeijer",
+              path: "https://youtu.be/ad-dnxfRTvc",
+            },
+            {
+              name: "Eerste powerbi design",
+              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
+            },
+            {
+              name: "Tweede powerbi design",
+              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
+            },
+            {
+              name: "How Facial Recognition Fails, Een video over hoe een amateur een AI ontwikkeld en fout kan gaan.",
+              path: "https://youtu.be/7W6uSF98b6s",
+            },
+          ],
           dropped: false,
         },
         {
@@ -99,13 +122,22 @@ export default {
           leerdoel: "Data interpreteren",
           reflecties: [
             "Vergelijkbaar met het vorige leerdoel, tijdens dit semester tijdens de dataopdracht werd ik geplaatst in de opslag en opschoning van de data in powerbi. Doordat mijn kennis over het programma nog niet heel diep was, was dit niet heel efficient gedaan. Ik wil dit leerdoel beter aantonen met mijn persoonlijke leerdoel PowerBi.",
+            "Voorheen wist ik niet dat je handmatig gewoon kan filter op de X-as zonder ingewikkelde python scripts te schrijven in powerBI, in mijn originele document hadden we grofweg 3 dagen de tijd genomen om de data op te schonen in powerBI. In mijn nieuwe bestand kosten mij dit alleen een aantal uur met een 3x grotere dataset. Doordat mijn data sneller en beter was schoongemaakt kwamen de conclusies sneller naarvoren in de datavisualisaties. Om data dus beter te kunnen interpreteren is een goede basis nodig in de vorm van dataschoonmaak.",
           ],
           description:
             "De student kan data interpreteren en door middel van analytisch denken waardevolle conclusies uit de data te halen en deze omzetten in oplossingen die een impact hebben op het gebied van slimme steden.",
           proof: [
             {
-              name: "Dataopdracht powerbi",
-              path: inject("githubRef") + "Data/DataOpdracht.pbix",
+              name: "A quick guide to powerbi by Sem Plasmeijer",
+              path: "https://youtu.be/ad-dnxfRTvc",
+            },
+            {
+              name: "Eerste powerbi design",
+              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
+            },
+            {
+              name: "Tweede powerbi design",
+              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
             },
           ],
           dropped: false,
@@ -137,8 +169,8 @@ export default {
             "De student is in staat om trends te signaleren en hierop beleid/visie af te stemmen.",
           proof: [
             {
-              name: "Dataopdracht powerbi",
-              path: inject("githubRef") + "Sp/LinkbovenSP.pdf",
+              name: "Risico Analyse",
+              path: inject("githubRef") + "Sp/LinkBovenSP.pdf",
             },
           ],
           dropped: false,
@@ -160,9 +192,7 @@ export default {
             },
             {
               name: "ImagoOnderzoekPPTX",
-              path:
-                inject("githubRef") +
-                "CityMarketing/CityMarketingOnderzoek.pptx",
+              path: inject("githubRef") + "CityMarketing/ImagoOnderzoek.pptx",
             },
           ],
           dropped: false,
