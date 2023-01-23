@@ -164,7 +164,10 @@
           </div>
         </section>
         <section class="right">
-          <img src="../assets/transport.png" alt="" />
+          <img
+            src="../assets/esteban-chinchilla-eqlpqS9gPKg-unsplash.jpg"
+            alt=""
+          />
         </section>
       </section>
       <section class="themaSection mobiliteit">
@@ -423,10 +426,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-family: "Major Mono Display", monospace;
-    font-weight: 400;
-    font-size: 77px;
+  @media only screen and (min-width: 480px) {
+    h1 {
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      font-weight: 400;
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      font-weight: 400;
+      font-size: 77px;
+    }
   }
 }
 .linkToContent {
@@ -435,8 +453,26 @@
     user-select: none;
     font-family: "Major Mono Display", monospace;
     font-weight: 400;
-    font-size: 18px;
   }
+  @media only screen and (min-width: 480px) {
+    h2 {
+      font-size: 14px;
+      width: 50vw;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+
   margin-top: 1rem;
   ul {
     list-style: none;
@@ -462,7 +498,24 @@
     user-select: none;
     font-family: "Major Mono Display", monospace;
     font-weight: 400;
-    font-size: 18px;
+  }
+
+  @media only screen and (min-width: 480px) {
+    h2 {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h2 {
+      font-size: 18px;
+    }
   }
 }
 .themaSection {
@@ -478,39 +531,123 @@
     }
     width: 50vw;
     flex: 1;
-    padding-top: 6rem;
-    padding-left: 7rem;
-    padding-right: 20rem;
+
     h1 {
       color: var(--vt-c-black-soft);
       user-select: none;
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
-      font-size: 40px;
+    }
+
+    @media only screen and (min-width: 480px) {
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 70vw;
+      p {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      padding-top: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 60vw;
+      p {
+        font-size: 15px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      padding-top: 6rem;
+      padding-left: 7rem;
+      padding-right: 20rem;
+      width: 50vw;
+
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 
   .right {
     display: flex;
     flex: 0;
-    width: 50vw;
     max-height: 100vh;
 
-    .innerLeft {
-      img {
-        object-fit: cover;
-        max-height: 100vh;
+    @media only screen and (min-width: 480px) {
+      width: 30vw;
+      h1 {
+        font-size: 20px;
+      }
+
+      .innerLeft {
+        display: none;
+      }
+      .innerRight {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        img {
+          object-fit: cover;
+          margin-bottom: 2vh;
+          max-height: 49vh;
+        }
       }
     }
-    .innerRight {
-      display: flex;
-      flex-direction: column;
-      width: 25vw;
-      img {
-        object-fit: cover;
-        margin-bottom: 2vh;
-        margin-left: 1vw;
-        max-height: 49vh;
+
+    @media only screen and (min-width: 960px) {
+      width: 40vw;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .innerLeft {
+        display: none;
+      }
+      .innerRight {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        img {
+          object-fit: cover;
+          margin-bottom: 2vh;
+          max-height: 49vh;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      width: 50vw;
+      h1 {
+        font-size: 40px;
+      }
+
+      .innerLeft {
+        display: block;
+        img {
+          object-fit: cover;
+          max-height: 100vh;
+        }
+      }
+      .innerRight {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        img {
+          object-fit: cover;
+          margin-bottom: 2vh;
+          margin-left: 1vw;
+          max-height: 49vh;
+        }
       }
     }
   }
@@ -521,10 +658,22 @@
   .right {
     background-color: white;
     max-height: 100vh;
-    overflow: scroll;
-    width: 50vw;
     img {
       object-fit: cover;
+      height: 100vh;
+      width: inherit;
+    }
+
+    @media only screen and (min-width: 480px) {
+      width: 30vw;
+    }
+
+    @media only screen and (min-width: 960px) {
+      width: 40vw;
+    }
+
+    @media only screen and (min-width: 1500px) {
+      width: 50vw;
     }
   }
   .left {
@@ -534,58 +683,157 @@
     }
     width: 50vw;
     flex: 1;
-    padding-top: 6rem;
-    padding-left: 7rem;
-    padding-right: 20rem;
+
     h1 {
       color: var(--vt-c-black-soft);
       user-select: none;
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
-      font-size: 40px;
+    }
+
+    @media only screen and (min-width: 480px) {
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 70vw;
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      padding-top: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 60vw;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      padding-top: 6rem;
+      padding-left: 7rem;
+      padding-right: 20rem;
+      width: 50vw;
+      width: 50vw;
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 }
 
 .mobiliteit {
+  background-color: var(--vt-c-fourth);
   display: flex;
   .left {
-    width: 50vw;
+    background-color: white;
+    max-height: 100vh;
     img {
       object-fit: cover;
-      width: 50vw;
       height: 100vh;
+      width: inherit;
+    }
+
+    @media only screen and (min-width: 480px) {
+      width: 30vw;
+    }
+
+    @media only screen and (min-width: 960px) {
+      width: 40vw;
+    }
+
+    @media only screen and (min-width: 1500px) {
+      width: 50vw;
     }
   }
   .right {
-    width: 50vw;
-    background-color: var(--vt-c-fourth);
     p {
       margin: 1rem 0rem;
       margin-left: 40px;
     }
     width: 50vw;
     flex: 1;
-    padding-top: 6rem;
-    padding-left: 7rem;
-    padding-right: 20rem;
     h1 {
       color: var(--vt-c-black-soft);
       user-select: none;
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
-      font-size: 40px;
+    }
+
+    @media only screen and (min-width: 480px) {
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 70vw;
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      padding-top: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 60vw;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      padding-top: 6rem;
+      padding-left: 7rem;
+      padding-right: 20rem;
+      width: 50vw;
+      width: 50vw;
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 }
 .veiligheid {
+  background-color: var(--vt-c-fourth);
   display: flex;
   .left {
-    width: 50vw;
+    background-color: white;
+    max-height: 100vh;
     img {
       object-fit: cover;
-      width: 50vw;
       height: 100vh;
+      width: inherit;
+    }
+
+    @media only screen and (min-width: 480px) {
+      width: 30vw;
+    }
+
+    @media only screen and (min-width: 960px) {
+      width: 40vw;
+    }
+
+    @media only screen and (min-width: 1500px) {
+      width: 50vw;
     }
   }
   .right {
@@ -595,32 +843,69 @@
     }
     width: 50vw;
     flex: 1;
-    padding-top: 6rem;
-    padding-left: 7rem;
-    padding-right: 20rem;
     h1 {
       color: var(--vt-c-black-soft);
       user-select: none;
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
-      font-size: 40px;
     }
-    background-color: var(--vt-c-secondary);
-    .linkToContent {
-      ul {
-        li {
-          a {
-            border-bottom: 2px solid var(--vt-c-third);
-            box-shadow: inset 0 -4px 0 var(--vt-c-third);
-            &:hover {
-              background: var(--vt-c-third);
-            }
+
+    @media only screen and (min-width: 480px) {
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 70vw;
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      padding-top: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 60vw;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      padding-top: 6rem;
+      padding-left: 7rem;
+      padding-right: 20rem;
+      width: 50vw;
+      width: 50vw;
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  background-color: var(--vt-c-secondary);
+  .linkToContent {
+    ul {
+      li {
+        a {
+          border-bottom: 2px solid var(--vt-c-third);
+          box-shadow: inset 0 -4px 0 var(--vt-c-third);
+          &:hover {
+            background: var(--vt-c-third);
           }
         }
       }
     }
   }
 }
+
 .duurzaamheid {
   background-color: var(--vt-c-third);
   display: flex;
@@ -631,39 +916,115 @@
     }
     width: 50vw;
     flex: 1;
-    padding-top: 6rem;
-    padding-left: 7rem;
-    padding-right: 20rem;
+
     h1 {
       color: var(--vt-c-black-soft);
       user-select: none;
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
-      font-size: 40px;
+    }
+
+    @media only screen and (min-width: 480px) {
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 70vw;
+      p {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      padding-top: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 60vw;
+      p {
+        font-size: 15px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      padding-top: 6rem;
+      padding-left: 7rem;
+      padding-right: 20rem;
+      width: 50vw;
+      width: 50vw;
+      width: 50vw;
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 
   .right {
     display: flex;
     flex: 0;
-    width: 50vw;
     max-height: 100vh;
 
-    .innerLeft {
-      img {
-        object-fit: cover;
-        max-height: 100vh;
+    @media only screen and (min-width: 480px) {
+      width: 30vw;
+      h1 {
+        font-size: 20px;
+      }
+
+      .innerLeft {
+        img {
+          object-fit: cover;
+          max-height: 100vh;
+        }
+      }
+      .innerRight {
+        display: none;
       }
     }
-    .innerRight {
-      display: flex;
-      flex-direction: column;
-      width: 25vw;
-      img {
-        object-fit: cover;
-        margin-bottom: 2vh;
-        margin-left: 1vw;
-        max-height: 49vh;
+
+    @media only screen and (min-width: 960px) {
+      width: 40vw;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .innerLeft {
+        img {
+          object-fit: cover;
+          max-height: 100vh;
+        }
+      }
+      .innerRight {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      width: 50vw;
+      h1 {
+        font-size: 40px;
+      }
+
+      .innerLeft {
+        img {
+          object-fit: cover;
+          max-height: 100vh;
+        }
+      }
+      .innerRight {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        img {
+          object-fit: cover;
+          margin-bottom: 2vh;
+          margin-left: 1vw;
+          max-height: 49vh;
+        }
       }
     }
   }

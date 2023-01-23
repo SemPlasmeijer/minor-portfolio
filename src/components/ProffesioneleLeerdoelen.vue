@@ -1,6 +1,6 @@
 <template>
   <div class="leerdoelContainer">
-    <h1>Profesionele Leerdoelen</h1>
+    <h1>Professionele Leerdoelen</h1>
 
     <div
       class="leerdoelItem"

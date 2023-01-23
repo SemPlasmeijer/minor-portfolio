@@ -233,6 +233,8 @@ export default {
 
 <style lang="scss">
 .leerdoelContainer {
+  max-height: 100vh;
+  overflow:auto;
   h1 {
     margin-bottom: 3rem;
     font-size: 40px;

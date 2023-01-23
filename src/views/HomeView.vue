@@ -27,11 +27,32 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h1 {
-      color: var(--vt-c-secondary);
-      font-family: "Major Mono Display", monospace;
-      font-weight: 400;
-      font-size: 77px;
+
+    @media only screen and (min-width: 480px) {
+      h1 {
+        color: var(--vt-c-secondary);
+        font-family: "Major Mono Display", monospace;
+        font-weight: 400;
+        font-size: 30px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      h1 {
+        color: var(--vt-c-secondary);
+        font-family: "Major Mono Display", monospace;
+        font-weight: 400;
+        font-size: 50px;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      h1 {
+        color: var(--vt-c-secondary);
+        font-family: "Major Mono Display", monospace;
+        font-weight: 400;
+        font-size: 77px;
+      }
     }
   }
 }

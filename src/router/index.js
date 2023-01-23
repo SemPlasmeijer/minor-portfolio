@@ -11,7 +11,7 @@ import ProjectView from '../views/ProjectView.vue'
 
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',

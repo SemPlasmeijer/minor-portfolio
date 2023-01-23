@@ -19,7 +19,7 @@
             </li>
             <li>
               <a @click="activeId = 2" :class="{ active: activeId === 2 }">
-                Profesionele Leerdoelen</a
+                Professionele Leerdoelen</a
               >
             </li>
             <li>
@@ -57,8 +57,8 @@
               gemeente raad een probleem ziet, en al deze lenzen bij elkaar
               komen bij het verbeteren van een stad <br />
               <br />
-              Had ik deze minor nogmaals willen kiezen als ik 6 maanden terug kon
-              in tijd, dat weet ik niet <br />
+              Had ik deze minor nogmaals willen kiezen als ik 6 maanden terug
+              kon in tijd, dat weet ik niet <br />
               ,maar ik wel hoe ik de minor opnieuw zou aanpakken. Ik zou vaker
               mijn gedachten delen met mijn <br />
               groepsgenoten en mijn eigen kennis meer willen proberen te
@@ -68,8 +68,8 @@
               het Surface gedeelte aan te willen pakken bij sommige onderwerpen.
               <br />
               <br />
-              Over het algemeen kijk ik wel positief terug op de afgelopen
-              6 maanden en denk ik dat <br />
+              Over het algemeen kijk ik wel positief terug op de afgelopen 6
+              maanden en denk ik dat <br />
               best heb gedaan om meerdere perspectieven te vergelijken met
               elkaar om tot een geheel antwoord te komen.
             </p>
@@ -112,10 +112,28 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-family: "Major Mono Display", monospace;
-    font-weight: 400;
-    font-size: 77px;
+  @media only screen and (min-width: 480px) {
+    h1 {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 77px;
+    }
   }
 }
 .leerdoelSection {
@@ -123,6 +141,8 @@ export default {
   display: flex;
 
   header {
+    height: 100%;
+
     padding-top: 6rem;
     min-width: 15vw;
     max-width: 15vw;
@@ -139,13 +159,21 @@ export default {
           cursor: pointer;
           user-select: none;
           font-weight: 400;
-          font-size: 20px;
           text-decoration: none;
-          font-size: 25px;
           border-bottom: 2px solid var(--vt-c-secondary);
           box-shadow: inset 0 -4px 0 var(--vt-c-secondary);
           color: inherit;
           transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+
+          @media only screen and (min-width: 480px) {
+            font-size: 16px;
+          }
+          @media only screen and (min-width: 960px) {
+            font-size: 18px;
+          }
+          @media only screen and (min-width: 1500px) {
+            font-size: 25px;
+          }
         }
 
         .active {

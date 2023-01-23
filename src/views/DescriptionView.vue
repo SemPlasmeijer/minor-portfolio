@@ -106,9 +106,25 @@ export default {
   width: 60vw;
   padding-right: 1rem;
   margin-bottom: 6rem;
-  .title {
-    font-size: 77px;
-    font-weight: 200;
+  @media only screen and (min-width: 480px) {
+    h1 {
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      font-weight: 400;
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      font-weight: 400;
+      font-size: 77px;
+    }
   }
 }
 
@@ -141,25 +157,60 @@ export default {
 
 .whoSection {
   background-color: var(--vt-c-fourth);
+
   p {
     margin-left: 1rem;
     margin-right: 1rem;
     opacity: 1;
     transition: opacity 0.3s;
   }
-  h1 {
-    margin-bottom: 1rem;
-    font-size: 40px;
-    font-weight: bold;
-    opacity: 1;
-    transition: opacity 0.3s;
+  @media only screen and (min-width: 480px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 25px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 5rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
   }
-  padding: 0 20rem;
-  display: flex;
-  height: 100vh;
-  text-align: center;
-  font-size: 35px;
-  align-items: center;
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 35px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 10rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 40px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 20rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+  }
 
   .btn {
     padding: 1rem;

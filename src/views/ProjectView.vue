@@ -168,10 +168,28 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-family: "Major Mono Display", monospace;
-    font-weight: 400;
-    font-size: 77px;
+  @media only screen and (min-width: 480px) {
+    h1 {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-size: 77px;
+    }
   }
 }
 
@@ -184,19 +202,54 @@ export default {
     opacity: 1;
     transition: opacity 0.3s;
   }
-  h1 {
-    margin-bottom: 1rem;
-    font-size: 40px;
-    font-weight: bold;
-    opacity: 1;
-    transition: opacity 0.3s;
+
+  @media only screen and (min-width: 480px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 25px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 5rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
   }
-  padding: 0 20rem;
-  display: flex;
-  height: 100vh;
-  text-align: center;
-  font-size: 35px;
-  align-items: center;
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 35px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 10rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 40px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 20rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+  }
 
   .btn {
     padding: 1rem;
@@ -251,25 +304,62 @@ export default {
 
 .reflectieSection {
   background-color: var(--vt-c-fourth);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
   p {
     margin-left: 1rem;
     margin-right: 1rem;
     opacity: 1;
-    font-size: 25px;
     transition: opacity 0.3s;
   }
-  h1 {
-    margin-bottom: 1rem;
-    font-size: 40px;
-    font-weight: bold;
-    opacity: 1;
-    transition: opacity 0.3s;
+
+  @media only screen and (min-width: 480px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 25px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    padding: 0 5rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
   }
-  margin: 0rem 20rem;
-  padding: 10rem 15rem;
-  height: 100vh;
-  text-align: center;
-  font-size: 35px;
+
+  @media only screen and (min-width: 960px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 30px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    margin: 0rem 10rem;
+    padding: 7rem 10rem;
+    height: 100vh;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 40px;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    margin: 0rem 20rem;
+    padding: 10rem 15rem;
+    height: 100vh;
+    text-align: center;
+    font-size: 20px;
+  }
 }
 </style>
