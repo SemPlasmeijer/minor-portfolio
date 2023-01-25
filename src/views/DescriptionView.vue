@@ -120,7 +120,7 @@ export default {
     }
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h1 {
       font-weight: 400;
       font-size: 77px;
@@ -196,7 +196,7 @@ export default {
     align-items: center;
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h1 {
       margin-bottom: 1rem;
       font-size: 40px;

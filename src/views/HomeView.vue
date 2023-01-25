@@ -46,7 +46,7 @@ main {
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       h1 {
         color: var(--vt-c-secondary);
         font-family: "Major Mono Display", monospace;

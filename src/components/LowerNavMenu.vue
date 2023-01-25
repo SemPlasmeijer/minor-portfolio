@@ -212,7 +212,7 @@ body[data-nav="true"] > #app > div > nav > #nav-links {
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1700px) {
   nav {
     width: 100%;
     position: absolute;

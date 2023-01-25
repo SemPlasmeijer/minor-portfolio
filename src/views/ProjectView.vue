@@ -184,7 +184,7 @@ export default {
     }
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h1 {
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
@@ -235,7 +235,7 @@ export default {
     align-items: center;
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h1 {
       margin-bottom: 1rem;
       font-size: 40px;
@@ -347,7 +347,7 @@ export default {
     font-size: 16px;
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h1 {
       margin-bottom: 1rem;
       font-size: 40px;

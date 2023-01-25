@@ -440,7 +440,7 @@
     }
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h1 {
       font-weight: 400;
       font-size: 77px;
@@ -467,7 +467,7 @@
     }
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h2 {
       font-size: 18px;
     }
@@ -512,7 +512,7 @@
     }
   }
 
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1700px) {
     h2 {
       font-size: 18px;
     }
@@ -565,7 +565,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       padding-top: 6rem;
       padding-left: 7rem;
       padding-right: 20rem;
@@ -625,7 +625,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       width: 50vw;
       h1 {
         font-size: 40px;
@@ -672,7 +672,7 @@
       width: 40vw;
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       width: 50vw;
     }
   }
@@ -720,7 +720,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       padding-top: 6rem;
       padding-left: 7rem;
       padding-right: 20rem;
@@ -753,7 +753,7 @@
       width: 40vw;
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       width: 50vw;
     }
   }
@@ -800,7 +800,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       padding-top: 6rem;
       padding-left: 7rem;
       padding-right: 20rem;
@@ -832,7 +832,7 @@
       width: 40vw;
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       width: 50vw;
     }
   }
@@ -879,7 +879,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       padding-top: 6rem;
       padding-left: 7rem;
       padding-right: 20rem;
@@ -950,7 +950,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       padding-top: 6rem;
       padding-left: 7rem;
       padding-right: 20rem;
@@ -1003,7 +1003,7 @@
       }
     }
 
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1700px) {
       width: 50vw;
       h1 {
         font-size: 40px;
