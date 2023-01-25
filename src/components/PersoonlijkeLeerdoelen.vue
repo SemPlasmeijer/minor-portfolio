@@ -97,7 +97,6 @@ export default {
             {
               name: "Eerste powerbi design",
               path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/Powerbi/DataOpdracht.pdf",
-              type: "powerBi",
             },
             {
               name: "Tweede powerbi design",
