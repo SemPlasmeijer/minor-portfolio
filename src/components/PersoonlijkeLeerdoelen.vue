@@ -96,13 +96,12 @@ export default {
             },
             {
               name: "Eerste powerbi design",
-              path: "https://app.powerbi.com/reportEmbed?reportId=f2422372-d1c7-4960-9605-2c7e0cb65dc8&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/Powerbi/DataOpdracht.pdf",
               type: "powerBi",
             },
             {
               name: "Tweede powerbi design",
-              path: "https://app.powerbi.com/reportEmbed?reportId=41296498-44c8-4f2d-be90-dc1f5c5f9fac&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
-              type: "powerBi",
+              path: "https://github.com/SemPlasmeijer/minor-portfolio/blob/main/onderzoek-bestanden-etc/Leerdoelen/Powerbi/BasketballRedo.pdf",
             },
           ],
           dropped: false,
