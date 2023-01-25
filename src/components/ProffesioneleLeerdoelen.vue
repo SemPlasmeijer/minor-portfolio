@@ -31,8 +31,18 @@
         <div class="linkToContent" v-if="leerdoel.proof.length > 0">
           <span style="font-weight: bold">Bewijslast voor leerdoel</span>
           <ul>
-            <li :key="file" v-for="file in leerdoel.proof">
-              <a target="_blank" :href="file.path">{{ file.name }}</a>
+            <li class="proof" :key="file" v-for="file in leerdoel.proof">
+              <div v-if="file.type === 'powerBi'">
+                <a target="_blank" :href="file.path">{{ file.name }}</a>
+                <iframe
+                  title="DataOpdracht"
+                  class="powerBi"
+                  :src="file.path"
+                  frameborder="0"
+                  allowFullScreen="true"
+                ></iframe>
+              </div>
+              <a v-else target="_blank" :href="file.path">{{ file.name }}</a>
             </li>
           </ul>
         </div>
@@ -72,11 +82,13 @@ export default {
           proof: [
             {
               name: "Eerste powerbi design",
-              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
+              path: "https://app.powerbi.com/reportEmbed?reportId=f2422372-d1c7-4960-9605-2c7e0cb65dc8&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              type: "powerBi",
             },
             {
               name: "Tweede powerbi design",
-              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
+              path: "https://app.powerbi.com/reportEmbed?reportId=41296498-44c8-4f2d-be90-dc1f5c5f9fac&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              type: "powerBi",
             },
             {
               name: "Onderzoeksrapport edge datacenters Rotterdam",

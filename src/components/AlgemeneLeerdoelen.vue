@@ -30,8 +30,18 @@
         <div class="linkToContent" v-if="leerdoel.proof.length > 0">
           <span style="font-weight: bold">Bewijslast voor leerdoel</span>
           <ul>
-            <li :key="file" v-for="file in leerdoel.proof">
-              <a target="_blank" :href="file.path">{{ file.name }}</a>
+            <li class="proof" :key="file" v-for="file in leerdoel.proof">
+              <div v-if="file.type === 'powerBi'">
+                <a target="_blank" :href="file.path">{{ file.name }}</a>
+                <iframe
+                  title="DataOpdracht"
+                  class="powerBi"
+                  :src="file.path"
+                  frameborder="0"
+                  allowFullScreen="true"
+                ></iframe>
+              </div>
+              <a v-else target="_blank" :href="file.path">{{ file.name }}</a>
             </li>
           </ul>
         </div>
@@ -104,11 +114,13 @@ export default {
             },
             {
               name: "Eerste powerbi design",
-              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
+              path: "https://app.powerbi.com/reportEmbed?reportId=f2422372-d1c7-4960-9605-2c7e0cb65dc8&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              type: "powerBi",
             },
             {
               name: "Tweede powerbi design",
-              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
+              path: "https://app.powerbi.com/reportEmbed?reportId=41296498-44c8-4f2d-be90-dc1f5c5f9fac&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              type: "powerBi",
             },
             {
               name: "How Facial Recognition Fails, Een video over hoe een amateur een AI ontwikkeld en fout kan gaan.",
@@ -133,11 +145,13 @@ export default {
             },
             {
               name: "Eerste powerbi design",
-              path: "https://app.powerbi.com/links/2VDBxY8JEg?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=a722d037-a8e6-48d2-b961-f251f6891149",
+              path: "https://app.powerbi.com/reportEmbed?reportId=f2422372-d1c7-4960-9605-2c7e0cb65dc8&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              type: "powerBi",
             },
             {
               name: "Tweede powerbi design",
-              path: "https://app.powerbi.com/links/BP-CWItRd8?ctid=c66b6765-b794-4a2b-84ed-845b341c086a&pbi_source=linkShare&bookmarkGuid=d2096bd1-a59d-42d6-b984-c6941c09d14b",
+              path: "https://app.powerbi.com/reportEmbed?reportId=41296498-44c8-4f2d-be90-dc1f5c5f9fac&autoAuth=true&ctid=c66b6765-b794-4a2b-84ed-845b341c086a",
+              type: "powerBi",
             },
           ],
           dropped: false,
@@ -234,7 +248,7 @@ export default {
 <style lang="scss">
 .leerdoelContainer {
   max-height: 100vh;
-  overflow:auto;
+  overflow: auto;
   h1 {
     margin-bottom: 3rem;
     font-size: 40px;
@@ -242,7 +256,7 @@ export default {
   }
   padding-top: 6rem;
   margin-left: 5rem;
-
+  margin-right: 5rem;
   .leerdoelItem {
     margin-bottom: 1.5rem;
     width: 100%;
@@ -291,6 +305,12 @@ export default {
               &:hover {
                 background: var(--vt-c-secondary);
               }
+            }
+            .powerBi {
+              text-decoration: none;
+              width: 100%;
+              height: 25vw;
+              margin: 1rem 0;
             }
           }
         }
